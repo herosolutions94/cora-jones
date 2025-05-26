@@ -57,6 +57,13 @@ const Footer = () => {
               </div>
             </div>
             <div className="col">
+              <h4>About Company</h4>
+              <p>
+                I’m a strategic technology leader with over 20 years of
+                experience in AI infrastructure and cloud architecture.
+              </p>
+            </div>
+            <div className="col">
               <h4>Quick Links</h4>
               <ul className="fst">
                 <li>
@@ -79,24 +86,7 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-            <div className="col">
-              <h4>More Links</h4>
-              <ul className="fst">
-                <li>
-                  <Link href="/contact">Contact Us</Link>
-                </li>
-                <li>
-                  <Link href="/FAQs">FAQ</Link>
-                </li>
-                <li>
-                  <Link href="/appointment">Appointment Tips</Link>
-                </li>
 
-                <li>
-                  <Link href="/quote">Our Appraisals</Link>
-                </li>
-              </ul>
-            </div>
             <div className="col">
               <h4>Signup for Newsletters</h4>
               <form
@@ -126,7 +116,7 @@ const Footer = () => {
           <div className="copyright relative">
             <div className="contain">
               <div className="inner">
-                <p>Copyright © Moto Buyers</p>
+                <p>Copyright © 2024, All Rights CORA-JONES</p>
               </div>
             </div>
           </div>

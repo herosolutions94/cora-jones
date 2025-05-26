@@ -1,9 +1,9 @@
 import React from "react";
 
-const Features = () => {
+const Features = ({ className = "" }) => {
   return (
     <>
-      <section className="sec_features">
+      <section className={`sec_features ${className}`}>
         <div className="contain">
           <div className="inner_block">
             <div className="flex">

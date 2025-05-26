@@ -1346,11 +1346,12 @@ label {
   display: block;
   width: 100%;
   height: 4.4rem;
-  background: #fceded;
+  background: rgba(255, 255, 255, 0.1);
   text-align: left;
   padding: 0.6rem 1.4rem;
-  border: 1.5px solid #ffd4d4;
-  @include radius(50px);
+  @include radius(10px);
+  border: none;
+  color: $white;
   outline: none !important;
   @include trans;
   &:-webkit-autofill {
@@ -1359,8 +1360,7 @@ label {
   }
   &::placeholder {
     font-family: "Regular";
-    color: rgba(19, 19, 19, 0.5);
-    opacity: 0.6;
+    color: rgba(172, 172, 172, 0.76);
     font-size: 1.6rem;
   }
   @at-root {
@@ -1381,19 +1381,19 @@ label {
     border-color: $color;
   }
   &::-webkit-input-placeholder {
-    color: rgba(19, 19, 19, 0.5);
+    color: rgba(172, 172, 172, 0.76);
   }
   &::-moz-placeholder {
-    color: rgba(19, 19, 19, 0.5);
+    color: rgba(172, 172, 172, 0.76);
   }
   &:-ms-input-placeholder {
-    color: rgba(19, 19, 19, 0.5);
+    color: rgba(172, 172, 172, 0.76);
   }
   &::-ms-input-placeholder {
-    color: rgba(19, 19, 19, 0.5);
+    color: rgba(172, 172, 172, 0.76);
   }
   &::placeholder {
-    color: rgba(19, 19, 19, 0.5);
+    color: rgba(172, 172, 172, 0.76);
   }
   &:focus::-webkit-input-placeholder {
     opacity: 0.4;
@@ -2770,7 +2770,7 @@ nav {
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  gap: 124px;
+  gap: 85px;
   @include trans;
   @include ipad_sm {
     @include pos($pos: fixed, $t: 8rem);
@@ -2994,7 +2994,7 @@ footer {
   position: relative;
   background: $sec_bg;
   color: #d5d4d4;
-  padding-top: 12rem;
+  padding-top: 7rem;
   overflow: hidden;
   font-size: 13px;
   .contain {
@@ -3003,6 +3003,7 @@ footer {
       display: flex;
       justify-content: space-between;
       flex-flow: nowrap;
+      align-items: baseline;
       margin: -1.5rem -4rem;
       .col {
         flex: 1;
@@ -3010,6 +3011,9 @@ footer {
         &:nth-child(1) {
           flex: 2;
           margin-top: -56px;
+        }
+        &:nth-child(2) {
+          flex: 2;
         }
         &:nth-child(4) {
           flex: 2;
