@@ -6,6 +6,8 @@ import Cta from "@/components/cta";
 import Project from "./home/project";
 import Scalable from "./home/scalable";
 import Services from "./home/services";
+import Features from "@/components/features";
+import Transform from "./home/transform";
 
 const Index = () => {
   return (
@@ -16,6 +18,8 @@ const Index = () => {
         <Mission />
         <Project />
         <Services />
+        <Features className="sec_changes" />
+        <Transform />
         <Scalable />
         <Cta />
       </main>

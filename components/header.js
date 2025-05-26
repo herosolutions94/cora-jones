@@ -65,7 +65,7 @@ export default function Header() {
               </ul>
             </li>
             <li>
-              <Link href="" onClick={ToggleAction}>
+              <Link href="/impact" onClick={ToggleAction}>
                 Impact
               </Link>
             </li>
@@ -76,7 +76,7 @@ export default function Header() {
             </li>
           </ul>
           <div className="cta">
-            <Link href="" onClick={ToggleAction} className="site_btn">
+            <Link href="/contact" onClick={ToggleAction} className="site_btn">
               Contact Us
             </Link>
           </div>

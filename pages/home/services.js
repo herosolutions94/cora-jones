@@ -1,5 +1,25 @@
 import React from "react";
 import Slider from "react-slick";
+
+// Custom Arrows
+function NextArrow(props) {
+  const { onClick } = props;
+  return (
+    <div className="custom-arrow next-arrow" onClick={onClick}>
+      <img src="images/next.svg" alt="Next" />
+    </div>
+  );
+}
+
+function PrevArrow(props) {
+  const { onClick } = props;
+  return (
+    <div className="custom-arrow prev-arrow" onClick={onClick}>
+      <img src="images/back.svg" alt="Previous" />
+    </div>
+  );
+}
+
 const Services = () => {
   const settings = {
     dots: false,
@@ -10,120 +30,109 @@ const Services = () => {
     arrows: true,
     autoplay: true,
     autoplaySpeed: 2000,
-
+    nextArrow: <NextArrow />,
+    prevArrow: <PrevArrow />,
     responsive: [
       {
         breakpoint: 1300,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 1,
-          infinite: true,
           arrows: true,
-          dots: false,
         },
       },
       {
         breakpoint: 1025,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 1,
-          infinite: true,
           arrows: true,
-          dots: false,
         },
       },
       {
         breakpoint: 1000,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 1,
-          infinite: true,
           arrows: true,
-          dots: false,
         },
       },
       {
         breakpoint: 769,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 1,
           arrows: true,
-          dots: false,
         },
       },
     ],
   };
+
   return (
-    <>
-      <section className="sec_services">
-        <div className="contain">
-          <div className="cmn_heading">
-            <div className="title">
-              <h5>Consulting Services</h5>
-            </div>
-            <h2>Empowering Scalable, Compliant AI and Cloud</h2>
+    <section className="sec_services">
+      <div className="contain">
+        <div className="cmn_heading">
+          <div className="title">
+            <h5>Consulting Services</h5>
           </div>
-          <Slider {...settings}>
-            <div className="item">
-              <div className="inner">
-                <div className="image">
-                  <img src="images/ser_1.png" alt="" />
-                </div>
-                <div className="text">
-                  <h5>AI Infrastructure Strategy</h5>
-                  <p>
-                    Designing secure and scalable AI platforms tailored for
-                    enterprise and public-sector deployment.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="item">
-              <div className="inner">
-                <div className="image">
-                  <img src="images/ser_2.png" alt="" />
-                </div>
-                <div className="text">
-                  <h5>Cloud-Native ML Enablement</h5>
-                  <p>
-                    Deploying ML in cloud-first environments with best practices
-                    and automation.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="item">
-              <div className="inner">
-                <div className="image">
-                  <img src="images/ser_1.png" alt="" />
-                </div>
-                <div className="text">
-                  <h5>AI Infrastructure Strategy</h5>
-                  <p>
-                    Designing secure and scalable AI platforms tailored for
-                    enterprise and public-sector deployment.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="item">
-              <div className="inner">
-                <div className="image">
-                  <img src="images/ser_2.png" alt="" />
-                </div>
-                <div className="text">
-                  <h5>Cloud-Native ML Enablement</h5>
-                  <p>
-                    Deploying ML in cloud-first environments with best practices
-                    and automation.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </Slider>
+          <h2>Empowering Scalable, Compliant AI and Cloud</h2>
         </div>
-      </section>
-    </>
+        <Slider {...settings}>
+          <div className="item">
+            <div className="inner">
+              <div className="image">
+                <img src="images/ser_1.png" alt="" />
+              </div>
+              <div className="text">
+                <h5>AI Infrastructure Strategy</h5>
+                <p>
+                  Designing secure and scalable AI platforms tailored for
+                  enterprise and public-sector deployment.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="item">
+            <div className="inner">
+              <div className="image">
+                <img src="images/ser_2.png" alt="" />
+              </div>
+              <div className="text">
+                <h5>Cloud-Native ML Enablement</h5>
+                <p>
+                  Deploying ML in cloud-first environments with best practices
+                  and automation.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="item">
+            <div className="inner">
+              <div className="image">
+                <img src="images/ser_1.png" alt="" />
+              </div>
+              <div className="text">
+                <h5>AI Infrastructure Strategy</h5>
+                <p>
+                  Designing secure and scalable AI platforms tailored for
+                  enterprise and public-sector deployment.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="item">
+            <div className="inner">
+              <div className="image">
+                <img src="images/ser_2.png" alt="" />
+              </div>
+              <div className="text">
+                <h5>Cloud-Native ML Enablement</h5>
+                <p>
+                  Deploying ML in cloud-first environments with best practices
+                  and automation.
+                </p>
+              </div>
+            </div>
+          </div>
+        </Slider>
+      </div>
+    </section>
   );
 };
 
