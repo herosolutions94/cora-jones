@@ -183,7 +183,7 @@ export default function Services() {
                   </ul>
                 </div>
                 <div className="cta1">
-                  <Link href="" className="site_btn">
+                  <Link href="/detail" className="site_btn">
                     Read More
                   </Link>
                 </div>
