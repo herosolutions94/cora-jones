@@ -24,58 +24,72 @@ const Transform = () => {
             </div>
             <div className="col2">
               <div className="inner_card">
-                <ul>
-                  <li>
-                    <div className="head">
-                      <h5>Before</h5>
-                    </div>
-                  </li>
-                  <li>
-                    <div className="head">
-                      <h5>After</h5>
-                    </div>
-                  </li>
-                  <li>
-                    <div className="body">
-                      <p>LLM onboarding took 3+ months</p>
-                    </div>
-                  </li>
-                  <li>
-                    <div className="body">
-                      <p>Reduced to 4 weeks (60% faster)</p>
-                    </div>
-                  </li>
-                  <li>
-                    <div className="body">
-                      <p>Manual pipeline audit logging</p>
-                    </div>
-                  </li>
-                  <li>
-                    <div className="body">
-                      <p>Automated, audit-ready logging</p>
-                    </div>
-                  </li>
-                  <li>
-                    <div className="body">
-                      <p>Single-region cloud infrastructure</p>
-                    </div>
-                  </li>
-                  <li>
-                    <div className="body">
-                      <p>Multi-region HA with 99.9% uptime</p>
-                    </div>
-                  </li>
-                  <li>
-                    <div className="body">
-                      <p>No model versioning</p>
-                    </div>
-                  </li>
-                  <li>
-                    <div className="body">
-                      <p>Version-controlled via MLflow & CI/CD</p>
-                    </div>
-                  </li>
-                </ul>
+                <div className="cols">
+                  <ul>
+                    <li>
+                      <div className="head">
+                        <h5>Before</h5>
+                      </div>
+                    </li>
+
+                    <li>
+                      <div className="body">
+                        <p>LLM onboarding took 3+ months</p>
+                      </div>
+                    </li>
+
+                    <li>
+                      <div className="body">
+                        <p>Manual pipeline audit logging</p>
+                      </div>
+                    </li>
+
+                    <li>
+                      <div className="body">
+                        <p>Single-region cloud infrastructure</p>
+                      </div>
+                    </li>
+
+                    <li>
+                      <div className="body">
+                        <p>No model versioning</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div className="cols">
+                  <ul>
+                    <li>
+                      <div className="head">
+                        <h5>After</h5>
+                      </div>
+                    </li>
+
+                    <li>
+                      <div className="body">
+                        <p>Reduced to 4 weeks (60% faster)</p>
+                      </div>
+                    </li>
+
+                    <li>
+                      <div className="body">
+                        <p>Automated, audit-ready logging</p>
+                      </div>
+                    </li>
+
+                    <li>
+                      <div className="body">
+                        <p>Multi-region HA with 99.9% uptime</p>
+                      </div>
+                    </li>
+
+                    <li>
+                      <div className="body">
+                        <p>Version-controlled via MLflow & CI/CD</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
