@@ -14,83 +14,104 @@ const Transformation = () => {
           <div className="flex">
             <div className="col2">
               <div className="inner_card">
-                <ul>
-                  <li>
-                    <div className="head">
-                      <h5>Metric</h5>
-                    </div>
-                  </li>
-                  <li>
-                    <div className="head">
-                      <h5>Before Implementation</h5>
-                    </div>
-                  </li>
-                  <li>
-                    <div className="head">
-                      <h5>After Implementation</h5>
-                    </div>
-                  </li>
-                  <li>
-                    <div className="body">
-                      <p>Onboarding Time</p>
-                    </div>
-                  </li>
-                  <li>
-                    <div className="body">
-                      <p>8 Weeks</p>
-                    </div>
-                  </li>
-                  <li>
-                    <div className="body">
-                      <p>3 Weeks</p>
-                    </div>
-                  </li>
-                  <li>
-                    <div className="body">
-                      <p>Onboarding Time</p>
-                    </div>
-                  </li>
-                  <li>
-                    <div className="body">
-                      <p>8 Weeks</p>
-                    </div>
-                  </li>
-                  <li>
-                    <div className="body">
-                      <p>3 Weeks</p>
-                    </div>
-                  </li>
-                  <li>
-                    <div className="body">
-                      <p>Onboarding Time</p>
-                    </div>
-                  </li>
-                  <li>
-                    <div className="body">
-                      <p>8 Weeks</p>
-                    </div>
-                  </li>
-                  <li>
-                    <div className="body">
-                      <p>3 Weeks</p>
-                    </div>
-                  </li>
-                  <li>
-                    <div className="body">
-                      <p>Onboarding Time</p>
-                    </div>
-                  </li>
-                  <li>
-                    <div className="body">
-                      <p>8 Weeks</p>
-                    </div>
-                  </li>
-                  <li>
-                    <div className="body">
-                      <p>3 Weeks</p>
-                    </div>
-                  </li>
-                </ul>
+                <div className="cols">
+                  <ul>
+                    <li>
+                      <div className="head">
+                        <h5>Metric</h5>
+                      </div>
+                    </li>
+
+                    <li>
+                      <div className="body">
+                        <p>Onboarding Time</p>
+                      </div>
+                    </li>
+
+                    <li>
+                      <div className="body">
+                        <p>Compliance Findings</p>
+                      </div>
+                    </li>
+
+                    <li>
+                      <div className="body">
+                        <p>Manual Review Points</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="body">
+                        <p>Infra Cost (avg/project)</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div className="cols">
+                  <ul>
+                    <li>
+                      <div className="head">
+                        <h5>Before Implementation</h5>
+                      </div>
+                    </li>
+
+                    <li>
+                      <div className="body">
+                        <p>8 Weeks</p>
+                      </div>
+                    </li>
+
+                    <li>
+                      <div className="body">
+                        <p> 4/year</p>
+                      </div>
+                    </li>
+
+                    <li>
+                      <div className="body">
+                        <p>12</p>
+                      </div>
+                    </li>
+
+                    <li>
+                      <div className="body">
+                        <p>$180K</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div className="cols">
+                  <ul>
+                    <li>
+                      <div className="head">
+                        <h5>After Implementation</h5>
+                      </div>
+                    </li>
+
+                    <li>
+                      <div className="body">
+                        <p>3 Weeks</p>
+                      </div>
+                    </li>
+
+                    <li>
+                      <div className="body">
+                        <p> 0/year</p>
+                      </div>
+                    </li>
+
+                    <li>
+                      <div className="body">
+                        <p>4</p>
+                      </div>
+                    </li>
+
+                    <li>
+                      <div className="body">
+                        <p>$85K</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>

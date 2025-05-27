@@ -70,7 +70,7 @@ export default function Header() {
               </Link>
             </li>
             <li>
-              <Link href="" onClick={ToggleAction}>
+              <Link href="/case-study" onClick={ToggleAction}>
                 Case Studies
               </Link>
             </li>
