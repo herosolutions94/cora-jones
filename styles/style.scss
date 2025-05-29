@@ -115,7 +115,7 @@
           p {
             margin-bottom: 0;
             font-size: 14px;
-            line-height: 15px;
+            line-height: 18px;
             text-transform: uppercase;
             font-family: 'Medium';
           }
@@ -170,6 +170,9 @@
   .center_heading {
     max-width: 60rem;
     margin: 0 auto 3rem;
+    &.groundup_heading{
+      max-width: 80rem;
+    }
   }
   .flex {
     margin: -1.5rem;
@@ -250,6 +253,9 @@
       width: 50%;
       padding-right: 40px;
       align-self: center;
+      p{
+        color: rgba(255, 255, 255, 0.76);
+      }
       h3{
         font-size: 3rem;
       }
@@ -301,6 +307,30 @@
         .image_o{
           img{
             object-position: left;
+          }
+        }
+      }
+    }
+    &.project_blk_outer{
+      .image_o {
+        @include img(70%);
+        box-shadow: none;
+        background-color: transparent;
+        border: 1px solid #64748b38;
+        img {
+          @include pos;
+          @include object;
+          object-fit: cover!important;
+        }
+      }       
+      padding: 3rem;
+      .text{
+        margin-top: 2rem;
+        .btn_blk{
+          .site_btn{
+            padding: 0 2rem;
+            min-width: unset;
+            height: 4rem;
           }
         }
       }
@@ -701,6 +731,7 @@
 // ===== sec_testimonials
 .sec_testimonials {
   padding-bottom: 0;
+  padding-top: 0;
   .cmn_heading {
     text-align: center;
     margin-bottom: 20px;
@@ -712,13 +743,20 @@
       text-align: center;
       @include radius(15px);
       border: 1px solid rgba(37, 99, 235, 0.24);
-      width: 70%;
+      max-width: 80rem;
       margin: 0 auto;
       .text {
+        max-width: 47rem;
+        margin: 0 auto;
         p {
           margin-bottom: 0;
           margin-top: 20px;
           color: rgba(255, 255, 255, 0.74);
+          
+        }
+        h5{
+          font-style: italic;
+          line-height: 1.5;
         }
       }
     }
@@ -727,10 +765,10 @@
     top: 48%;
   }
   .next-arrow {
-    right: 7%;
+    right: 15rem;
   }
   .prev-arrow {
-    left: 7%;
+    left: 15rem;
   }
 }
 // ==== sec_win
@@ -1092,5 +1130,13 @@
         }
       }
     }
+  }
+}
+
+
+.services_banner{
+  .sec_heading{
+    max-width: 80rem;
+    margin: 0 auto;
   }
 }

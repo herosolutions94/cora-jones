@@ -8,7 +8,7 @@ export default function Projects() {
   return (
     <div>
       <main>
-        <section id="smallbanner">
+        <section id="smallbanner"className="services_banner">
           <div className="contain">
             <div className="text-center sec_heading">
               <h1>Featured Projects</h1>
@@ -31,7 +31,7 @@ export default function Projects() {
           <div className="contain">
             <div className="flex two_cols">
               <div className="cols">
-                <div className=" inner_block outer_blk">
+                <div className=" inner_block outer_blk project_blk_outer">
                   <div className="image_o">
                     <img src="/images/p1.png" alt="" />
                   </div>
@@ -72,7 +72,7 @@ export default function Projects() {
                 </div>
               </div>
               <div className="cols">
-                <div className=" inner_block outer_blk">
+                <div className=" inner_block outer_blk project_blk_outer">
                   <div className="image_o">
                     <img src="/images/p2.png" alt="" />
                   </div>

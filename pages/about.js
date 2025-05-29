@@ -57,7 +57,7 @@ export default function About() {
 
         <section className="sec_critical groundup">
           <div className="contain outer_blk">
-            <div className="center_heading cmn_heading">
+            <div className="center_heading cmn_heading groundup_heading">
               <div className="title">
                 <h5>Ground up</h5>
               </div>

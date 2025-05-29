@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import Slider from "react-slick";
 import Cta from "@/components/cta";
+import Testimonials from "@/components/testimonials";
 
 
 // Custom Arrows
@@ -73,7 +74,7 @@ export default function Detail() {
         <div className="contain">
           <div className="flex two_cols">
             <div className="cols">
-              <h2>AI Infrastructure Strategy</h2>
+              <h1>AI Infrastructure Strategy</h1>
               <p>Designing scalable, secure systems for enterprise-grade AI.</p>
             </div>
             <div className="cols">
@@ -215,26 +216,26 @@ export default function Detail() {
             <div className="colL">
                 <div className="flex">
               <div className="cols">
-                <div className="outer_blk">
+                <div className="outer_blk sm_outer">
                   <h4>Assessment & Planning</h4>
                   <p>Evaluate existing systems and opportunities</p>
                 </div>
               </div>
 
               <div className="cols">
-                <div className="outer_blk">
+                <div className="outer_blk sm_outer">
                   <h4>Design & Prototyping</h4>
                   <p>Architect infrastructure blueprints</p>
                 </div>
               </div>
               <div className="cols">
-                <div className="outer_blk">
+                <div className="outer_blk sm_outer">
                   <h4>Governance & Handoff</h4>
                   <p>Ensure compliance, continuity, and knowledge transfer</p>
                 </div>
               </div>
               <div className="cols">
-                <div className="outer_blk">
+                <div className="outer_blk sm_outer">
                   <h4>Implementation & Optimization</h4>
                   <p>Deploy and refine scalable AI environments</p>
                 </div>
@@ -256,8 +257,7 @@ export default function Detail() {
           </div>
         </div>
       </section>
-      <h1>testimonial</h1>
-
+      <Testimonials />
       <Cta />
     </main>
   );

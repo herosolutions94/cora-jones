@@ -9,24 +9,24 @@ const Footer = () => {
             <div className="col">
               <div className="footerLogo">
                 <Link href="/">
-                  <img src="images/footer.png" alt="" />
+                  <img src="/images/footer.png" alt="" />
                 </Link>
               </div>
               <ul className="infoLst">
                 <li>
-                  <img src="images\location.svg" alt="" />
+                  <img src="/images/location.svg" alt="" />
                   <Link href="">
                     7696 Broadway, Suite CLemon Grove, CA 91945
                   </Link>
                 </li>
                 <li>
-                  <img src="images\envelope.svg" alt="" />
+                  <img src="/images/envelope.svg" alt="" />
                   <Link href="mailto:jetmeans@gmail.com">
                     abcinfo@gmail.com
                   </Link>
                 </li>
                 <li>
-                  <img src="images\phone.svg" alt="" />
+                  <img src="/images/phone.svg" alt="" />
                   <Link href="tel:(734) 219-2298">(734) 219-86796</Link>
                 </li>
               </ul>
@@ -35,22 +35,22 @@ const Footer = () => {
                 <ul className="social flex">
                   <li>
                     <Link href="?" style={{ display: "block" }}>
-                      <img src="images/social-instagram.svg" alt="" />
+                      <img src="/images/social-instagram.svg" alt="" />
                     </Link>
                   </li>
                   <li>
                     <Link href="?" style={{ display: "block" }}>
-                      <img src="images/social-facebook.svg" alt="" />
+                      <img src="/images/social-facebook.svg" alt="" />
                     </Link>
                   </li>
                   <li>
                     <Link href="?" style={{ display: "block" }}>
-                      <img src="images/social-youtube.svg" alt="" />
+                      <img src="/images/social-youtube.svg" alt="" />
                     </Link>
                   </li>
                   <li>
                     <Link href="?" style={{ display: "block" }}>
-                      <img src="images/social-twitter.svg" alt="" />
+                      <img src="/images/social-twitter.svg" alt="" />
                     </Link>
                   </li>
                 </ul>
@@ -107,7 +107,7 @@ const Footer = () => {
                     placeholder="Enter your email address"
                   />
                   <button type="submit">
-                    <img src="images/mail.svg" alt="" />
+                    <img src="/images/mail.svg" alt="" />
                   </button>
                 </div>
               </form>

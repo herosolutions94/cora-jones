@@ -28,17 +28,17 @@ export default function Header() {
         <nav id="nav" className={toggle ? "active" : ""}>
           <ul>
             <li>
-              <Link href="" onClick={ToggleAction}>
+              <Link href="/about" onClick={ToggleAction}>
                 About Us
               </Link>
             </li>
             <li>
-              <Link href="" onClick={ToggleAction}>
+              <Link href="/project" onClick={ToggleAction}>
                 Projects
               </Link>
             </li>
             <li className="drop">
-              <Link href="" onClick={ToggleAction}>
+              <Link href="/services" onClick={ToggleAction}>
                 Services
               </Link>
               <ul className="sub">
@@ -75,13 +75,17 @@ export default function Header() {
               </Link>
             </li>
           </ul>
-          <div className="cta">
-            <Link href="/contact" onClick={ToggleAction} className="site_btn">
+        </nav>
+        <div className="login_btns">
+          <ul>
+            <li>
+              <Link href="/contact" onClick={ToggleAction} className="site_btn">
               Contact Us
             </Link>
-          </div>
-        </nav>
-        <div className="clearfix"></div>
+            </li>
+          </ul>
+        </div>
+      <div className="clearfix"></div>
       </div>
     </header>
   );

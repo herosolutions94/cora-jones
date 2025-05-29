@@ -306,7 +306,7 @@ _btn {
       font-family: "SemiBold";
       text-align: center;
       font-size: 1.5rem;
-      padding: 0 2rem;
+      padding: 0 3rem;
       letter-spacing: 0.03rem;
       white-space: nowrap;
       @include radius(10px);
@@ -2737,7 +2737,7 @@ nav {
   height: 8rem;
   width: max-content;
   @include pos($t: null, $b: null, $r: 1.5rem);
-  margin-left: auto;
+  margin: auto;
   @include ipad {
     height: 6rem;
   }
@@ -2818,7 +2818,7 @@ nav {
     }
     > li {
       position: relative;
-      padding: 0 2.5rem;
+      padding: 0 2rem;
       @include ipad_sm {
         width: 100%;
         padding: 0;
@@ -2836,7 +2836,7 @@ nav {
         font-family: "SemiBold";
         color: $white;
         text-transform: uppercase;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         text-align: center;
         text-decoration: none;
         &:hover,
@@ -2893,7 +2893,7 @@ nav {
             display: block;
             color: $black;
             padding: 0.4rem 2rem 0.5rem;
-            font-size: 1.5rem;
+            font-size: 1.3rem;
             font-family: "Regular";
             text-decoration: none;
             @include ipad_sm {
@@ -2920,7 +2920,7 @@ nav {
           height: 1rem;
           color: inherit;
           margin-left: 0.6rem;
-          margin-top: 0.4rem;
+          margin-top: 0rem;
         }
       }
     }
@@ -2971,7 +2971,7 @@ nav {
         }
         &.site_btn {
           color: #fff;
-          font-size: 1.6rem;
+          font-size: 1.5rem;
           @include radius(10px);
           @include mobile_sm {
             padding: 0 2rem;
@@ -2981,8 +2981,8 @@ nav {
             border-color: #fa4342;
           }
           &:hover {
-            background-color: $color;
-            color: #fff;
+            background-color: $white;
+            color: $primary-color;
           }
         }
       }
