@@ -88,7 +88,7 @@ const Project = () => {
             </div>
             <div className="col2">
               <div className="image_o">
-                <img src="images/project-1.png" alt="" />
+                <img src="images/project-2.png" alt="" />
               </div>
             </div>
           </div>

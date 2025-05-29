@@ -1,6 +1,17 @@
 .two_cols {
   .cols {
     width: 50%;
+    &.abt_right_col{
+      align-self: flex-end;
+    }
+  }
+  &.abt_two_cols{
+    margin-bottom: 4rem;
+    .cols{
+      h2{
+        margin-bottom: 0;
+      }
+    }
   }
 }
 .cmn_heading {
@@ -10,7 +21,7 @@
       font-family: "Bold";
       letter-spacing: 2px;
       text-transform: uppercase;
-      font-size: 14px;
+      font-size: 16px;
     }
   }
 }
@@ -19,9 +30,11 @@
 }
 .border_blue_box {
   background: $sec_bg;
-  padding: 15px;
+  padding: 80px 25px;
   @include radius(15px);
   border-left: 1px solid $primary-color;
+  position: relative;
+    padding-bottom: 48px;
 }
 .image_o {
   position: relative;
@@ -34,24 +47,27 @@
 .custom-arrow {
   position: absolute;
   top: unset;
-  bottom: -43px;
+  bottom: -75px;
   background: rgba(24, 24, 24, 1);
-  width: 30px;
-  height: 30px;
-  padding: 9px;
+  width: 50px;
+  height: 50px;
+  padding: 15px;
   cursor: pointer;
   @include radius(100%);
 }
 // =======
 .banner {
-  padding-top: 17rem;
+  padding-top: 20rem;
   padding-bottom: 1rem;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-image: url(/images/banner_bg.png);
+  background-image: url(/images/banner-bg.jpg);
+  @include bg;
+  &:before{
+    @include pos;
+    content: '';
+    background: linear-gradient(180deg, #000000c4, #000);
+  }
   .inside {
-    width: 79%;
+    max-width: 95rem;
     text-align: center;
     margin: 0 auto;
     h1 {
@@ -61,7 +77,7 @@
     .cta {
       width: fit-content;
       margin: 0 auto;
-      margin-top: 25px;
+      margin-top: 3rem;
       padding-bottom: 5rem;
     }
   }
@@ -70,7 +86,9 @@
 .sec_features {
   text-align: left;
   padding-bottom: 0;
-
+&.sec_changes{
+  padding-top: 16rem;
+}
   .inner_block {
     .cols {
       width: calc(100% / 3);
@@ -81,9 +99,13 @@
         .percentage {
           width: 59%;
           p {
-            font-size: 26px;
+            font-size: 30px;
             margin-bottom: 0;
             text-align: right;
+            strong{
+              font-family: 'SemiBold';
+              font-style: italic;
+            }
           }
         }
         .content {
@@ -92,9 +114,10 @@
           margin-left: 15px;
           p {
             margin-bottom: 0;
-            font-size: 12px;
+            font-size: 14px;
             line-height: 15px;
             text-transform: uppercase;
+            font-family: 'Medium';
           }
           &::before {
             @include pos($t: 5px);
@@ -123,16 +146,21 @@
   .quote_block {
     margin-top: 25px;
     .image {
-      width: 53px;
+      width:80px;
+      height: 65px;
+      @include pos($r:null,$b:null,$t:1rem,$l:2rem);
     }
     .quote {
       padding-left: 20px;
       h3 {
         font-family: "Italic";
+        font-size: 4rem;
       }
       p {
         color: rgba(255, 255, 255, 0.6);
-        font-size: 1.4rem;
+        font-size:1.8rem;
+        margin-top: 2rem;
+        margin-bottom: 0;
       }
     }
   }
@@ -140,20 +168,26 @@
 // ==== sec_critical ====
 .sec_critical {
   .center_heading {
-    width: 50%;
-    margin: 0 auto;
+    max-width: 60rem;
+    margin: 0 auto 3rem;
   }
   .flex {
+    margin: -1.5rem;
     .cols {
       width: calc(100% / 3);
-      padding: 10px;
+      padding: 15px;
       .inner {
         display: flex;
         background: $sec_bg;
         @include radius(10px);
-        padding: 15px;
+        padding: 36px;
         .image {
-          width: 58px;
+          width: 7rem;
+          height: 7rem;
+          overflow: hidden;
+          img{
+            @include object(contain);
+          }
         }
         .content {
           padding-left: 20px;
@@ -161,6 +195,7 @@
           align-self: center;
           h6 {
             margin-bottom: 0;
+            font-size: 2rem;
           }
         }
       }
@@ -187,7 +222,9 @@
   padding-top: 0;
   .head {
     display: flex;
+    margin-bottom: 3rem;
     .cols {
+      align-self: center;
       .cta {
         display: flex;
         justify-content: flex-end;
@@ -199,8 +236,8 @@
     background: $sec_bg;
     @include radius(15px);
     margin-top: 20px;
-    margin-bottom: 50px;
-    padding: 30px;
+    margin-bottom: 60px;
+    padding: 6rem;
     &:nth-child(odd) {
       flex-direction: row-reverse;
       margin-bottom: 0;
@@ -213,6 +250,9 @@
       width: 50%;
       padding-right: 40px;
       align-self: center;
+      h3{
+        font-size: 3rem;
+      }
       ul {
         li {
           color: rgba(255, 255, 255, 0.76);
@@ -234,6 +274,7 @@
       .impact {
         h6 {
           color: $primary-color;
+          text-transform: uppercase;
         }
       }
       .cta1 {
@@ -245,9 +286,22 @@
       width: 50%;
       align-self: center;
       .image_o {
-        padding-bottom: 37rem;
+        @include img(70%);
+        box-shadow: none;
+        background-color: transparent;
+        border: 1px solid #64748b38;
         img {
-          object-fit: contain;
+          @include pos;
+          @include object;
+        }
+      }
+    }
+    &:nth-child(odd){
+      .col2{
+        .image_o{
+          img{
+            object-position: left;
+          }
         }
       }
     }
@@ -256,10 +310,12 @@
 // ===== sec_scalable ====
 .sec_scalable {
   padding-bottom: 0;
+  padding-top: 10rem;
   .flex {
     background: $sec_bg;
-    padding: 6rem;
+    padding: 8rem;
     @include radius(15px);
+    border: 1px solid rgba($primary-color,0.2);
     .col1 {
       padding-right: 30px;
       ul {
@@ -282,14 +338,14 @@
             text-align: center;
             border: 1px solid rgba(37, 99, 235, 0.25);
             .image {
-              width: 53px;
+              width: 80px;
               margin: 0 auto;
               margin-bottom: 15px;
             }
             .text {
               h5 {
                 margin-bottom: 0;
-                font-size: 15px;
+                font-size: 19px;
                 font-family: "SemiBold";
               }
             }
@@ -300,9 +356,12 @@
     .col2 {
       padding-left: 40px;
       align-self: center;
+      h2{
+        margin-bottom: 2rem;
+      }
       .cta {
         width: fit-content;
-        margin-top: 20px;
+        margin-top: 30px;
       }
     }
   }
@@ -311,7 +370,7 @@
 .sec_services {
   padding-bottom: 4rem;
   .cmn_heading {
-    width: 60%;
+   max-width: 70rem;
     margin: 0 auto;
     text-align: center;
     margin-bottom: 20px;
@@ -319,18 +378,19 @@
   .inner {
     background: $sec_bg;
     @include radius(10px);
-    padding: 30px;
+    padding: 35px;
     display: flex;
     height: 100%;
     margin: 10px;
     align-items: center;
     .image {
-      width: 90px;
-      padding: 19px;
-      height: 90px;
+      width: 140px;
+      padding: 30px;
+      height: 140px;
       @include radius(100%);
       background: $black;
-      margin-right: 35px;
+      margin-right: 20px;
+      border: 1px solid rgba($primary-color,0.3);
       img {
         width: 100%;
         height: 100%;
@@ -341,15 +401,17 @@
       width: 70%;
       h5 {
         font-family: "SemiBold";
+        font-size: 2.4rem;
+        margin-bottom: 1.5rem;
       }
     }
   }
 
   .next-arrow {
-    right: 47%;
+    right: 45.5%;
   }
   .prev-arrow {
-    left: 47%;
+    left: 45.5%;
   }
 }
 // === sec_changes
@@ -372,10 +434,11 @@
 .sec_transform {
   padding-bottom: 0;
   .cmn_heading {
-    width: 62%;
+   max-width: 70rem;
+   margin-bottom: 3rem;
   }
   .listings {
-    padding-top: 6rem;
+    padding-top: 10rem;
     display: flex;
     align-items: center;
     padding-left: 0;
@@ -385,7 +448,7 @@
       list-style: none;
       border: 1px solid #2563eb;
       background: rgba(13, 13, 13, 1);
-      padding: 11px 19px;
+      padding: 18px 32px;
       text-align: center;
       position: relative;
       min-width: 136px;
@@ -394,11 +457,13 @@
         position: absolute;
         left: -30px;
         z-index: 5;
-        top: 4px;
+        top: 0;
+        bottom: 0;
         content: "";
         width: 25px;
         background: url(/images/arrow_small.svg);
-        height: 25px;
+        background-repeat: no-repeat;
+        background-position: center;
       }
       &:first-child {
         &::before {
@@ -409,7 +474,7 @@
         margin-bottom: 0;
         text-transform: uppercase;
         line-height: 10px;
-        font-size: 13px;
+        font-size: 14px;
         font-family: "SemiBold";
       }
     }
@@ -417,13 +482,14 @@
   .col1 {
     width: 35%;
     align-self: center;
+    padding-right: 2rem;
   }
   .col2 {
     width: 65%;
-    padding-left: 40px;
+    padding-left: 50px;
     .inner_card {
       background: $sec_bg;
-      padding: 20px;
+      padding: 40px;
       @include radius(15px);
       border: 1px solid rgba(100, 116, 139, 0.62);
       display: flex;
@@ -463,7 +529,8 @@
 
             h5 {
               margin-bottom: 0;
-              font-family: "Bold";
+              font-family: "Medium";
+              font-size: 2rem;
             }
             p {
               margin-bottom: 0;
