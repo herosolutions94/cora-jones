@@ -22,7 +22,9 @@ const Featured = () => {
                   <div className="icons">
                     <img src="images/f-1.png" alt="" />
                   </div>
-                  <h5>Accelerating LLM Onboarding</h5>
+                  <Link href="/case-study/detail">
+                    <h5>Accelerating LLM Onboarding</h5>
+                  </Link>
                 </div>
                 <div className="text">
                   <p>
@@ -46,7 +48,10 @@ const Featured = () => {
                   <div className="icons">
                     <img src="images/f-2.png" alt="" />
                   </div>
-                  <h5>Enhancing Fraud Detection</h5>
+                  <Link href="">
+                    {" "}
+                    <h5>Enhancing Fraud Detection</h5>
+                  </Link>
                 </div>
                 <div className="text">
                   <p>
@@ -70,7 +75,9 @@ const Featured = () => {
                   <div className="icons">
                     <img src="images/f-3.png" alt="" />
                   </div>
-                  <h5>CI/CD Infrastructure Revamp</h5>
+                  <Link href="">
+                    <h5>CI/CD Infrastructure Revamp</h5>
+                  </Link>
                 </div>
                 <div className="text">
                   <p>
@@ -94,7 +101,10 @@ const Featured = () => {
                   <div className="icons">
                     <img src="images/f-4.png" alt="" />
                   </div>
-                  <h5>Intelligent Data Routing</h5>
+                  <Link href="">
+                    {" "}
+                    <h5>Intelligent Data Routing</h5>
+                  </Link>
                 </div>
                 <div className="text">
                   <p>
@@ -118,7 +128,9 @@ const Featured = () => {
                   <div className="icons">
                     <img src="images/f-5.png" alt="" />
                   </div>
-                  <h5>AI Service Automation</h5>
+                  <Link href="">
+                    <h5>AI Service Automation</h5>
+                  </Link>
                 </div>
                 <div className="text">
                   <p>
