@@ -5,7 +5,7 @@ const About = () => {
     <>
       <section className="sec_about">
         <div className="contain">
-          <div className="flex two_cols">
+          <div className="flex two_cols abt_two_cols">
             <div className="cols">
               <div className="cmn_heading">
                 <div className="title">
@@ -14,7 +14,7 @@ const About = () => {
                 <h2>Scaling AI with Confidence, Compliance, and Clarity</h2>
               </div>
             </div>
-            <div className="cols">
+            <div className="cols abt_right_col">
               <div className="text">
                 <p>
                   I’m a strategic technology leader with over 20 years of
