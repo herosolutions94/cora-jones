@@ -6,7 +6,7 @@ export default function Services() {
   return (
     <div>
       <main>
-        <section id="smallbanner">
+        <section id="smallbanner" className="services_banner">
           <div className="contain">
             <div className="text-center sec_heading">
               <h1>Our Services</h1>
@@ -204,29 +204,30 @@ export default function Services() {
           <div className="contain">
             <div className="sec_heading">
               <h2>Optional Add-Ons</h2>
-              <div className="flex">
+            </div>
+            <div className="flex">
+              <div className="cols">
+                <div className="inner">
+                  <p>Architecture reviews & toolchain assessments</p>
+                </div>
+              </div>
                 <div className="cols">
-                  <div className="inner">
-                    <p>Architecture reviews & toolchain assessments</p>
-                  </div>
+                <div className="inner">
+                  <p>Security posture audits</p>
                 </div>
-                 <div className="cols">
-                  <div className="inner">
-                    <p>Security posture audits</p>
-                  </div>
+              </div>
+                <div className="cols">
+                <div className="inner">
+                  <p>Fractional CTO or Head of AI services (short-term)</p>
                 </div>
-                 <div className="cols">
-                  <div className="inner">
-                    <p>Fractional CTO or Head of AI services (short-term)</p>
-                  </div>
-                </div>
-                 <div className="cols">
-                  <div className="inner">
-                    <p>Speaking engagements & public-sector briefings</p>
-                  </div>
+              </div>
+                <div className="cols">
+                <div className="inner">
+                  <p>Speaking engagements & public-sector briefings</p>
                 </div>
               </div>
             </div>
+            
           </div>
         </section>
 
