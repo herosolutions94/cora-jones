@@ -289,6 +289,11 @@ $cross_circle: url('data:image/svg+xml;utf8,<svg version="1.1" xmlns="http://www
     @content;
   }
 }
+@mixin ipad_b {
+  @media (max-width: 1025px) {
+    @content;
+  }
+}
 @mixin ipad {
   @media (max-width: 1024px) {
     @content;
@@ -300,7 +305,11 @@ $cross_circle: url('data:image/svg+xml;utf8,<svg version="1.1" xmlns="http://www
     @content;
   }
 }
-
+@mixin mobile_b {
+  @media (max-width: 769px) {
+    @content;
+  }
+}
 @mixin mobile {
   @media (max-width: 767px) {
     @content;

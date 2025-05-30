@@ -55,6 +55,13 @@ const Services = () => {
         },
       },
       {
+        breakpoint: 912,
+        settings: {
+          slidesToShow: 1,
+          arrows: true,
+        },
+      },
+      {
         breakpoint: 769,
         settings: {
           slidesToShow: 1,
