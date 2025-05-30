@@ -44,12 +44,12 @@ export default function Header() {
               <ul className="sub">
                 <li>
                   <Link href="" onClick={ToggleAction}>
-                    Appointment tips
+                    AI Infrastructure Strategy
                   </Link>
                 </li>
                 <li>
                   <Link href="" onClick={ToggleAction}>
-                    Our Quote
+                   Cloud-Native ML Enablement
                   </Link>
                 </li>
                 <li>

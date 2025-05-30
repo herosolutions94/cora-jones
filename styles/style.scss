@@ -11,6 +11,9 @@
       h2{
         margin-bottom: 0;
       }
+      @include ipad{
+        width: 100%;
+      }
     }
   }
 }
@@ -60,6 +63,12 @@
   padding-top: 20rem;
   padding-bottom: 1rem;
   background-image: url(/images/banner-bg.jpg);
+  @include ipad_sm{
+    padding-top: 14rem;
+  }
+  @include mobile{
+    padding-top: 5rem;
+  }
   @include bg;
   &:before{
     @include pos;
@@ -79,6 +88,9 @@
       margin: 0 auto;
       margin-top: 3rem;
       padding-bottom: 5rem;
+      @include mobile_sm{
+        width: 100%;
+      }
     }
   }
 }
@@ -90,18 +102,50 @@
   padding-top: 16rem;
 }
   .inner_block {
+    @include ipad{
+      width: 100%!important;
+    }
+    @include mobile{
+      .flex{
+        justify-content: center;
+        @include mobile{
+          margin: -1rem;
+        }
+      }
+    }
     .cols {
       width: calc(100% / 3);
       padding: 0 30px;
+      @include ipad_sm{
+        padding: 0 10px;
+      }
+      @include mobile_md{
+        width: 50%;
+        padding: 1rem;
+      }
+      
       .inner {
         display: flex;
         align-items: center;
+        @include mobile_sm{
+          flex-direction: column;
+          align-items: unset;
+        }
         .percentage {
           width: 59%;
+          @include mobile_sm{
+            width: 100%;
+          }
           p {
             font-size: 30px;
             margin-bottom: 0;
             text-align: right;
+            @include ipad_sm{
+              font-size: 2rem;
+            }
+            @include mobile_sm{
+              text-align: left;
+            }
             strong{
               font-family: 'SemiBold';
               font-style: italic;
@@ -112,6 +156,11 @@
           position: relative;
           padding-left: 15px;
           margin-left: 15px;
+          @include mobile_sm{
+            padding-left: 0;
+            margin-left: 0;
+            margin-top: 2rem;
+          }
           p {
             margin-bottom: 0;
             font-size: 14px;
@@ -125,6 +174,11 @@
             width: 1px;
             height: 77%;
             background: #ffffff5c;
+            @include mobile_sm{
+              height: 1px;
+              width: 77%;
+              top: -10px;
+            }
           }
         }
       }
@@ -140,6 +194,9 @@
       .cta {
         margin-top: 20px;
         width: fit-content;
+        @include mobile_sm{
+          width: 100%;
+        }
       }
     }
   }
@@ -155,6 +212,9 @@
       h3 {
         font-family: "Italic";
         font-size: 4rem;
+        @include mobile_sm{
+          font-size: 2.5rem;
+        }
       }
       p {
         color: rgba(255, 255, 255, 0.6);
@@ -176,9 +236,16 @@
   }
   .flex {
     margin: -1.5rem;
+    justify-content: center;
     .cols {
       width: calc(100% / 3);
       padding: 15px;
+      @include ipad_sm{
+        width: 50%;
+      }
+      @include mobile_sm{
+        width: 100%;
+      }
       .inner {
         display: flex;
         background: $sec_bg;
@@ -209,13 +276,16 @@
 // ==== sec_cta ===
 .sec_cta {
   .inner {
-    width: 60%;
+   max-width: 70rem;
     margin: 0 auto;
     text-align: center;
     .cta {
       width: fit-content;
       margin: 0 auto;
       margin-top: 30px;
+      @include mobile_sm{
+        width: 100%;
+      }
     }
   }
 }
@@ -226,12 +296,25 @@
   .head {
     display: flex;
     margin-bottom: 3rem;
+    @include ipad_sm{
+      flex-flow: wrap;
+    }
     .cols {
       align-self: center;
+      @include ipad_sm{
+        width: 100%;
+        align-self: unset;
+      }
       .cta {
         display: flex;
         justify-content: flex-end;
         align-items: center;
+        @include ipad_sm{
+          justify-content: flex-start;
+        }
+        @include mobile_sm{
+          display: block;
+        }
       }
     }
   }
@@ -240,24 +323,44 @@
     @include radius(15px);
     margin-top: 20px;
     margin-bottom: 60px;
-    padding: 6rem;
+    padding: 4rem;
+    @include ipad_sm{
+      flex-direction: column-reverse;
+      gap: 3rem;
+    }
+    @include mobile_sm{
+      padding: 2rem;
+    }
     &:nth-child(odd) {
       flex-direction: row-reverse;
+      @include ipad_sm{
+        flex-direction: column-reverse;
+      }
       margin-bottom: 0;
       .col1 {
         padding-right: 0px;
         padding-left: 40px;
+        @include ipad_sm{
+          padding-left: 0;
+        }
       }
     }
     .col1 {
       width: 50%;
       padding-right: 40px;
       align-self: center;
+      @include ipad_sm{
+        width: 100%;
+        padding-right: 0;
+      }
       p{
         color: rgba(255, 255, 255, 0.76);
       }
       h3{
         font-size: 3rem;
+        @include mobile_sm{
+          font-size: 2rem;
+        }
       }
       ul {
         li {
@@ -286,11 +389,19 @@
       .cta1 {
         margin-top: 35px;
         width: fit-content;
+        @include mobile_sm{
+          width: 100%;
+        }
+        
       }
     }
     .col2 {
       width: 50%;
       align-self: center;
+      @include ipad_sm{
+        width: 100%;
+        align-self: unset;
+      }
       .image_o {
         @include img(70%);
         box-shadow: none;
@@ -331,6 +442,9 @@
             padding: 0 2rem;
             min-width: unset;
             height: 4rem;
+            @include mobile_sm{
+              width: 100%;
+            }
           }
         }
       }
@@ -346,20 +460,48 @@
     padding: 8rem;
     @include radius(15px);
     border: 1px solid rgba($primary-color,0.2);
+    @include ipad{
+      padding: 5rem;
+    }
+    @include mobile{
+      padding: 3rem;
+    }
+
+    
+    .cols{
+      @include ipad_sm{
+        width: 100%;
+        padding-right: 0;
+      }
+    }
     .col1 {
       padding-right: 30px;
+      @include ipad_sm{
+        width: 100%;
+        padding-right: 0;
+      }
       ul {
         padding-left: 0;
         display: flex;
         flex-wrap: wrap;
+        @include ipad_sm{
+          margin: -1rem;
+          margin-bottom: 3rem;
+        }
 
         li {
           &:nth-child(even) {
             transform: translateY(33px);
+            @include ipad_sm{
+              transform: translateY(0px);
+            }
           }
           width: calc(100% / 2);
           list-style: none;
           padding: 10px;
+          @include mobile_sm{
+            width: 100%;
+          }
           .inner {
             height: 100%;
             background: $black;
@@ -386,12 +528,19 @@
     .col2 {
       padding-left: 40px;
       align-self: center;
+      @include ipad_sm{
+        padding-left: 0;
+        align-self: unset;
+      }
       h2{
         margin-bottom: 2rem;
       }
       .cta {
         width: fit-content;
         margin-top: 30px;
+        @include mobile_sm{
+          width: 100%;
+        }
       }
     }
   }
@@ -413,6 +562,9 @@
     height: 100%;
     margin: 10px;
     align-items: center;
+    @include mobile_sm{
+      flex-direction: column;
+    }
     .image {
       width: 140px;
       padding: 30px;
@@ -421,6 +573,9 @@
       background: $black;
       margin-right: 20px;
       border: 1px solid rgba($primary-color,0.3);
+      @include mobile_sm{
+        margin-right: 0;
+      }
       img {
         width: 100%;
         height: 100%;
@@ -429,6 +584,11 @@
     }
     .text {
       width: 70%;
+      @include mobile_sm{
+        width: 100%;
+        margin-top: 2rem;
+        text-align: center;
+      }
       h5 {
         font-family: "SemiBold";
         font-size: 2.4rem;
@@ -439,9 +599,34 @@
 
   .next-arrow {
     right: 45.5%;
+    @include ipad{
+      right: 44.5%;
+    }
+    @include ipad_sm{
+      right: 42.5%;
+    }
+    @include mobile{
+      right: 40.5%;
+    }
+    @include mobile_md{
+      right: 0;
+    }
   }
   .prev-arrow {
     left: 45.5%;
+    @include ipad{
+      left: 44.5%;
+    }
+    @include ipad_sm{
+      left: 42.5%;
+    }
+    @include mobile{
+      left: 40.5%;
+    }
+    @include mobile_md{
+      left: unset;
+      right: 6rem;
+    }
   }
 }
 // === sec_changes
@@ -474,6 +659,10 @@
     padding-left: 0;
     gap: 33px;
     justify-content: center;
+    @include ipad_sm{
+      justify-content: flex-start;
+      overflow-y: auto;
+    }
     li {
       list-style: none;
       border: 1px solid #2563eb;
@@ -483,6 +672,10 @@
       position: relative;
       min-width: 136px;
       @include radius(50px);
+      @include ipad_sm{
+        width: max-content;
+        min-width: unset;
+      }
       &::before {
         position: absolute;
         left: -30px;
@@ -506,6 +699,9 @@
         line-height: 10px;
         font-size: 14px;
         font-family: "SemiBold";
+        @include ipad_sm{
+          width: max-content;
+        }
       }
     }
   }
@@ -513,10 +709,20 @@
     width: 35%;
     align-self: center;
     padding-right: 2rem;
+    @include ipad_sm{
+      width: 100%;
+      align-self: unset;
+      padding-right: 0;
+    }
   }
   .col2 {
     width: 65%;
     padding-left: 50px;
+    @include ipad_sm{
+      width: 100%;
+      padding-left: 0;
+      margin-top: 2rem;
+    }
     .inner_card {
       background: $sec_bg;
       padding: 40px;
@@ -524,11 +730,20 @@
       border: 1px solid rgba(100, 116, 139, 0.62);
       display: flex;
       flex-wrap: wrap;
+      @include mobile_sm{
+        padding: 2rem;
+        flex-wrap: nowrap;
+        overflow-y: auto;
+      }
 
       .cols {
         width: 50%;
+        @include mobile_sm{
+          width: 100%;
+        }
 
         &:first-child {
+          
           ul {
             &::before {
               display: none;
@@ -538,6 +753,9 @@
         ul {
           position: relative;
           padding-left: 0;
+          @include mobile_sm{
+            width: max-content;
+          }
 
           &::before {
             position: absolute;
@@ -546,12 +764,18 @@
             width: 1px;
             height: 99%;
             background: #383838;
+            @include mobile_sm{
+              left: 0;
+            }
           }
           li {
             width: 100%;
             list-style: none;
             padding: 10px 0;
             border-bottom: 1px solid #383838;
+            @include mobile_sm{
+              padding: 10px 10px;
+            }
             &:last-child {
               border-bottom: none;
               padding-bottom: 0;
