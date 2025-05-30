@@ -2784,7 +2784,7 @@ nav {
     -ms-flex-line-pack: justify;
     align-content: space-between;
     width: auto;
-    background: #fff;
+    background: #000000f4;
     margin: 0;
     padding: 2rem 5rem;
     border-top: 0.2rem solid rgba($black, 0.1);
@@ -2794,13 +2794,15 @@ nav {
     overflow: auto;
     z-index: 3;
     font-family: "LinkText";
+    height: 100vh;
+    align-content: center;
+    top: 0;
     &.active {
       opacity: 1;
       visibility: visible;
       pointer-events: auto;
-      top: 0;
-      height: 100vh;
-      align-content: center;
+      
+      
     }
   }
   > .nav_neg {
@@ -2822,7 +2824,7 @@ nav {
       @include ipad_sm {
         width: 100%;
         padding: 0;
-        text-align: center;
+        // text-align: center;
         .site_btn {
           margin-top: 0.5rem;
         }
@@ -2850,7 +2852,7 @@ nav {
       > .sub {
         @include pos($t: 106%, $b: null, $z: 2);
         background: #fff;
-        min-width: 176px;
+        min-width: 250px;
         top: 106%;
         text-align: left;
         padding: 1rem 0;
@@ -2868,14 +2870,15 @@ nav {
         overflow: hidden;
         @include ipad_sm {
           position: static;
-          display: none;
+          // display: none;
           width: 100%;
           max-height: none;
-          background: transparent;
+          background: #12121200;
+          padding: 1rem 0;
           visibility: visible;
           opacity: 1;
-          text-align: center;
-          padding: 0;
+          // text-align: center;
+          // padding: 0;
           margin: 0 auto !important;
           border: 0;
           border-radius: 0;
@@ -2883,6 +2886,7 @@ nav {
           transition: none;
           -webkit-box-shadow: none;
           box-shadow: none;
+          border-left: 1px solid #ddd;
         }
         &.active {
           display: block;
@@ -2898,6 +2902,7 @@ nav {
             text-decoration: none;
             @include ipad_sm {
               @include i_flex;
+              color: $white;
             }
             &:hover {
               color: $primary-color;
@@ -3011,18 +3016,53 @@ footer {
       flex-flow: nowrap;
       align-items: baseline;
       margin: -1.5rem -4rem;
+
+      @include ipad{
+        margin: -1.5rem -3rem;
+      }
+      @include ipad_sm{
+        flex-wrap: wrap;
+      }
       .col {
         flex: 1;
         padding: 1.5rem 3rem;
+        @include ipad_sm{
+          flex: unset;
+          width: 50%;
+        }
+        @include mobile_sm{
+          width: 100%;
+        }
         &:nth-child(1) {
           flex: 2;
           margin-top: -56px;
+          @include ipad_sm{
+            flex: unset;
+            width: 50%;
+          }
+          @include mobile_sm{
+          width: 100%;
+        }
         }
         &:nth-child(2) {
           flex: 2;
+          @include ipad_sm{
+            flex: unset;
+            width: 50%;
+          }
+          @include mobile_sm{
+          width: 100%;
+        }
         }
         &:nth-child(4) {
           flex: 2;
+          @include ipad_sm{
+            flex: unset;
+            width: 50%;
+          }
+          @include mobile_sm{
+          width: 100%;
+        }
         }
       }
       h4 {
@@ -3104,7 +3144,7 @@ footer {
         }
       }
       .social {
-        margin: -5px 13px -3px;
+        margin: -5px 0 -3px;
         > li {
           padding: 3px;
           > a {
