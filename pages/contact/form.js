@@ -7,7 +7,7 @@ const Form = () => {
       <section className="contact_form">
         <div className="contain">
           <div className="main_heading">
-            <h2>We are ready to assist</h2>
+            <h1>We are ready to assist</h1>
           </div>
           <div className="flex">
             <div className="col1">

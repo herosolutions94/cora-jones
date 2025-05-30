@@ -9,7 +9,7 @@ const Detail = () => {
         <div className="contain">
           <div className="top_area">
             <div className="sec_heading">
-              <h2>Accelerating LLM Onboarding</h2>
+              <h1>Accelerating LLM Onboarding</h1>
               <p>
                 From LLM onboarding to scalable compliance — real results
                 delivered for federal and enterprise systems.

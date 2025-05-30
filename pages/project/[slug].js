@@ -1,5 +1,7 @@
 import Cta from "@/components/cta";
+import Testimonials from "@/components/testimonials";
 import React from "react";
+
 
 export default function Detail() {
   return (
@@ -7,11 +9,11 @@ export default function Detail() {
       <section id="smallbanner" className="prjct-detail">
         <div className="contain">
           <div className="sec_heading text-center">
-            <h2>IRS – Bedrock LLM Platform</h2>
+            <h1>IRS – Bedrock LLM Platform</h1>
             <p>Accelerated AI compliance with 60% faster LLM onboarding</p>
           </div>
           <div className="image">
-            <img src="/images/pd1.png" />
+            <img src="/images/sd2.png" />
           </div>
         </div>
       </section>
@@ -77,94 +79,118 @@ export default function Detail() {
           </div>
         </div>
       </section>
-      <section className="sec_transform sec_transformation">
+   <section className="sec_transform sec_transformation trans_prj">
         <div className="contain">
+        
           <div className="flex">
             <div className="col2">
               <div className="inner_card">
-                <ul>
-                  <li>
-                    <div className="head">
-                      <h5>Metric</h5>
-                    </div>
-                  </li>
-                  <li>
-                    <div className="head">
-                      <h5>Before Implementation</h5>
-                    </div>
-                  </li>
-                  <li>
-                    <div className="head">
-                      <h5>After Implementation</h5>
-                    </div>
-                  </li>
-                  <li>
-                    <div className="body">
-                      <p>Onboarding Time</p>
-                    </div>
-                  </li>
-                  <li>
-                    <div className="body">
-                      <p>8 Weeks</p>
-                    </div>
-                  </li>
-                  <li>
-                    <div className="body">
-                      <p>3 Weeks</p>
-                    </div>
-                  </li>
-                  <li>
-                    <div className="body">
-                      <p>Onboarding Time</p>
-                    </div>
-                  </li>
-                  <li>
-                    <div className="body">
-                      <p>8 Weeks</p>
-                    </div>
-                  </li>
-                  <li>
-                    <div className="body">
-                      <p>3 Weeks</p>
-                    </div>
-                  </li>
-                  <li>
-                    <div className="body">
-                      <p>Onboarding Time</p>
-                    </div>
-                  </li>
-                  <li>
-                    <div className="body">
-                      <p>8 Weeks</p>
-                    </div>
-                  </li>
-                  <li>
-                    <div className="body">
-                      <p>3 Weeks</p>
-                    </div>
-                  </li>
-                  <li>
-                    <div className="body">
-                      <p>Onboarding Time</p>
-                    </div>
-                  </li>
-                  <li>
-                    <div className="body">
-                      <p>8 Weeks</p>
-                    </div>
-                  </li>
-                  <li>
-                    <div className="body">
-                      <p>3 Weeks</p>
-                    </div>
-                  </li>
-                </ul>
+                <div className="cols">
+                  <ul>
+                    <li>
+                      <div className="head">
+                        <h5>Metric</h5>
+                      </div>
+                    </li>
+
+                    <li>
+                      <div className="body">
+                        <p>Onboarding Time</p>
+                      </div>
+                    </li>
+
+                    <li>
+                      <div className="body">
+                        <p>Compliance Findings</p>
+                      </div>
+                    </li>
+
+                    <li>
+                      <div className="body">
+                        <p>Manual Review Points</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="body">
+                        <p>Infra Cost (avg/project)</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div className="cols">
+                  <ul>
+                    <li>
+                      <div className="head">
+                        <h5>Before Implementation</h5>
+                      </div>
+                    </li>
+
+                    <li>
+                      <div className="body">
+                        <p>8 Weeks</p>
+                      </div>
+                    </li>
+
+                    <li>
+                      <div className="body">
+                        <p> 4/year</p>
+                      </div>
+                    </li>
+
+                    <li>
+                      <div className="body">
+                        <p>12</p>
+                      </div>
+                    </li>
+
+                    <li>
+                      <div className="body">
+                        <p>$180K</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div className="cols">
+                  <ul>
+                    <li>
+                      <div className="head">
+                        <h5>After Implementation</h5>
+                      </div>
+                    </li>
+
+                    <li>
+                      <div className="body">
+                        <p>3 Weeks</p>
+                      </div>
+                    </li>
+
+                    <li>
+                      <div className="body">
+                        <p> 0/year</p>
+                      </div>
+                    </li>
+
+                    <li>
+                      <div className="body">
+                        <p>4</p>
+                      </div>
+                    </li>
+
+                    <li>
+                      <div className="body">
+                        <p>$85K</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <h1>testimonial</h1>
+
+      <Testimonials />
+
       <Cta />
     </main>
   );
