@@ -198,7 +198,7 @@
           align-self: center;
           h6 {
             margin-bottom: 0;
-            font-size: 2rem;
+       font-size: 25px;
           }
         }
       }
@@ -323,7 +323,7 @@
           object-fit: cover!important;
         }
       }       
-      padding: 3rem;
+      padding: 4rem;
       .text{
         margin-top: 2rem;
         .btn_blk{
@@ -574,7 +574,7 @@
 }
 // ==== contact_form
 .contact_form {
-  padding-top: 13rem;
+  padding-top: 16rem;
   padding-bottom: 0;
   .main_heading {
     text-align: center;
@@ -586,7 +586,7 @@
     .inner_card {
       background: $sec_bg;
       overflow: hidden;
-      @include radius(10px);
+      @include radius(30px);
       border: 1px solid rgba(37, 99, 235, 0.28);
       .image_o {
         padding-bottom: 31rem;
@@ -603,7 +603,7 @@
           li {
             list-style: none;
             display: flex;
-            padding-bottom: 5px;
+            padding-bottom: 20px;
             .icons {
               width: 30px;
               padding-right: 10px;
@@ -623,8 +623,8 @@
     width: 60%;
     form {
       background: $sec_bg;
-      padding: 20px;
-      @include radius(10px);
+      padding: 40px;
+      @include radius(30px);
       border: 1px solid rgba(37, 99, 235, 0.28);
       .txtGrp {
         margin-bottom: 20px;
@@ -641,16 +641,20 @@
 }
 // ===== sec_result
 .sec_result {
-  padding-top: 13rem;
+  padding-top: 16rem;
+  padding-bottom: 0;
   .col1 {
     width: 50%;
     align-self: center;
+    p{
+      font-size: 22px;
+    }
   }
   .col2 {
     width: 50%;
 
     .image_o {
-      padding-bottom: 40rem;
+      padding-bottom: 50rem;
       img {
         object-fit: contain;
       }
@@ -686,7 +690,7 @@
   .col2 {
     width: 50%;
     align-self: center;
-    padding-left: 40px;
+    padding-left: 60px;
     .cta {
       margin-top: 20px;
       width: fit-content;
@@ -696,11 +700,10 @@
 
 // === sec_perform ===
 .sec_perform {
-  padding-bottom: 0;
   .cmn_heading {
     text-align: center;
     width: 46%;
-    margin: 0 auto;
+    margin: 0 auto 40px;
   }
   .flex {
     .cols {
@@ -708,19 +711,19 @@
       padding: 10px;
       .inner {
         background: $sec_bg;
-        padding: 20px;
+        padding:40px 20px;
         @include radius(10px);
         border: 1px solid rgba(37, 99, 235, 0.28);
         .image {
-          width: 40px;
-          margin: 0 auto;
-          margin-bottom: 15px;
+           width: 60px;
+    margin: 0 auto;
+    margin-bottom: 25px;
         }
         .text {
           text-align: center;
           h5 {
             margin-bottom: 0;
-            font-size: 15px;
+            font-size: 20px;
             font-family: "SemiBold";
           }
         }
@@ -773,6 +776,7 @@
 }
 // ==== sec_win
 .sec_win {
+  padding-top: 10rem;
   .cmn_heading {
     text-align: center;
     margin-bottom: 20px;
@@ -793,24 +797,28 @@
         position: relative;
         padding-bottom: 15px;
         &::before {
-          @include pos($t: 49px);
+          @include pos($t: 57px);
           content: "";
-          width: 32%;
-          height: 1px;
-          background: $primary-color;
+     
+
+    width: 35%;
+    height: 1.6px;
+    background: #2563eb;
         }
         h2 {
-          font-size: 3rem;
+          font-size: 3.5rem;
           strong {
             color: $white;
+  font-family: "Italic";
+
           }
         }
       }
       h6 {
-        font-size: 16px;
+        font-size: 22px;
       }
       p {
-        font-size: 14px;
+        font-size: 16px;
       }
     }
   }
@@ -855,7 +863,7 @@
         @include radius(50px);
         a {
           color: $white;
-          font-size: 13px;
+          font-size: 16px;
         }
       }
     }
@@ -895,7 +903,6 @@
 }
 // === sec_capability
 .sec_capability {
-  padding-bottom: 0;
   .cmn_heading {
     text-align: center;
     width: 60%;
@@ -911,17 +918,17 @@
   .flex {
     .cols {
       width: calc(100% / 3);
-      padding: 20px 10px;
+      padding: 20px 20px;
       .image {
-        width: 30px;
-        margin-bottom: 10px;
+        width: 34px;
+        margin-bottom: 30px;
       }
     }
   }
 }
 // === sec_smallBanner
 .sec_smallBanner {
-  padding-top: 13rem;
+  padding-top: 16rem;
   position: relative;
   &::before {
     @include pos($t: unset);
@@ -930,6 +937,7 @@
     background: url(/images/small-b.png);
     height: 47%;
     background-repeat: no-repeat;
+    background-size: cover;
   }
   .inside {
     width: 56%;
@@ -952,6 +960,7 @@
   padding-bottom: 0;
   .cmn_heading {
     width: 60%;
+    margin-bottom: 40px;
   }
   .flex {
     .cols {
@@ -979,6 +988,7 @@
           }
         }
         .link {
+          margin-bottom: 40px;
           a {
             color: $primary-color;
             i {
@@ -988,7 +998,7 @@
         }
         .image_o {
           margin-top: 15px;
-          padding-bottom: 18rem;
+          padding-bottom: 27rem;
           img {
             object-fit: contain;
           }
@@ -1018,6 +1028,7 @@
           padding: 1.8rem;
           border: 1px solid rgba(37, 99, 235, 0.35);
           @include radius(10px);
+          height: 100%;
           h5 {
             font-family: "SemiBold";
             position: relative;
@@ -1041,15 +1052,18 @@
 }
 // ==== case_detail
 .case_detail {
-  padding-top: 13rem;
+  padding-top: 16rem;
   padding-bottom: 0;
   .top_area {
-    width: 60%;
+    width: 63%;
     margin: 0 auto;
     text-align: center;
+    p{
+      font-size: 24px;
+    }
     .image_o {
-      padding-bottom: 25rem;
-      margin-top: 20px;
+      padding-bottom: 30rem;
+      margin: 40px 0;
       img {
         object-fit: contain;
       }
@@ -1136,7 +1150,7 @@
 
 .services_banner{
   .sec_heading{
-    max-width: 80rem;
+    max-width: 90rem;
     margin: 0 auto;
   }
 }

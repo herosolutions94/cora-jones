@@ -113,7 +113,12 @@ export default function Projects() {
                 </div>
               </div>
             </div>
-            <div className="flex inner_block outer_blk">
+            <div className="flex inner_block outer_blk single_block">
+                  <div className="col2">
+                <div className="image">
+                  <img src="/images/sd1.png" alt="" />
+                </div>
+              </div>
               <div className="col1">
                 <div className="btn_blk">
                   <Link href="" className="site_btn">
@@ -146,11 +151,7 @@ export default function Projects() {
                   </Link>
                 </div>
               </div>
-              <div className="col2">
-                <div className="image_o">
-                  <img src="/images/p3.png" alt="" />
-                </div>
-              </div>
+          
             </div>
           </div>
         </section>
