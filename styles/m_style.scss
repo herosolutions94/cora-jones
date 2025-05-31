@@ -8,6 +8,7 @@
 #smallbanner {
   padding-top: 13rem;
   padding-bottom: 10rem;
+
   @include mobile_md {
     padding-top: 9rem;
   }
@@ -37,10 +38,16 @@
     padding: 3rem;
   }
 }
+
 #aboutme {
   padding: 0;
+
   .col {
     @include ipad_b {
+    width: 32%;
+
+    .image {
+      height: 100%;
       width: 100%;
       flex: unset;
       padding-bottom: 20px;
@@ -59,6 +66,7 @@
       }
       @include radius(21px);
       overflow: hidden;
+
       img {
         object-fit: cover;
         @include ipad_sm {
@@ -67,6 +75,7 @@
       }
     }
   }
+
   .colr {
     width: 67%;
     @include ipad_b {
@@ -74,9 +83,11 @@
       padding-left: 0;
     }
     padding-left: 20px;
+
     p {
       margin-bottom: 3rem;
     }
+
     .outer_blk {
       .block {
         background-color: #020202;
@@ -91,6 +102,7 @@
           font-size: 28px;
         }
       }
+
       .btn_blk {
         margin-top: 40px;
       }
@@ -126,6 +138,7 @@
 
 #history {
   padding-top: 0;
+
   .sec_heading {
     margin-bottom: 40px;
     p {
@@ -133,8 +146,10 @@
       line-height: 3rem;
     }
   }
+
   ul {
     @include list;
+
     li {
       display: flex;
       gap: 60px;
@@ -148,6 +163,7 @@
         border-bottom: 1px solid #3c3c3c;
         margin-bottom: 30px;
       }
+
       h2 {
         margin-bottom: 0;
         width: 25%;
@@ -158,6 +174,7 @@
           padding-bottom: 8px;
         }
       }
+
       .text {
         flex: 1;
         @include mobile_md {
@@ -166,11 +183,13 @@
         }
         h4 {
           margin-bottom: 2rem;
+
           span {
             color: #ffffffd9;
             font-family: "Italic";
           }
         }
+
         p {
           color: #ffffffd9;
           margin-bottom: 0;
@@ -182,6 +201,7 @@
 
 #missvision {
   padding: 0;
+
   .outer_blk {
     display: flex;
     gap: 70px;
@@ -200,6 +220,7 @@
 #counting {
   padding-bottom: 0;
   padding-top: 5rem;
+
   .outer_blk {
     display: flex;
     @include ipad_sm {
@@ -211,13 +232,18 @@
         width: 100%;
         padding-bottom: 20px;
       }
+    .heading {
+      width: 40%;
+
       h2 {
         font-size: 22px;
       }
+
       .btn_blk {
         margin-top: 20px;
       }
     }
+
     .flex {
       flex: 1;
       @include ipad_sm {
@@ -235,6 +261,7 @@
           width: 100%;
         }
         padding: 0 20px;
+
         h4 {
           font-family: "Italic";
           //   border-bottom: 2px solid #2563EB;
@@ -242,6 +269,7 @@
           font-size: 40px;
           position: relative;
           margin-bottom: 30px;
+
           &::before {
             position: absolute;
             content: "";
@@ -252,6 +280,7 @@
             background-color: #2563eb;
           }
         }
+
         p {
           text-transform: uppercase;
           font-size: 15px;
@@ -263,6 +292,7 @@
 
 .service_pg {
   padding: 0;
+
   .inner_block {
     border: 1px solid #64748b7d;
     margin-bottom: 70px;
@@ -271,6 +301,7 @@
     }
     &:nth-child(even) {
       flex-direction: row-reverse;
+
       //   margin-bottom: 0;
       .col1 {
         padding-right: 0;
@@ -280,6 +311,7 @@
         }
       }
     }
+
     &:nth-child(odd) {
       flex-direction: unset;
       margin-bottom: 70px;
@@ -301,11 +333,15 @@
 }
 
 #optionalads {
+  padding: 0;
+  padding-top: 5rem;
   .sec_heading {
     margin-bottom: 30px;
   }
+
   .flex {
     margin: -1rem;
+
     .cols {
       width: calc(100% / 2);
       padding: 10px;
@@ -316,6 +352,7 @@
         background-color: #1a1a1a;
         border-radius: 14px;
         padding: 20px;
+
         p {
           margin-bottom: 0;
           font-size: 20px;
@@ -349,6 +386,7 @@
         background: none;
         margin: 0;
         @include radius(21px);
+
         img {
           @include object(contain);
           @include pos;
@@ -360,6 +398,7 @@
 
 #offer {
   padding: 0;
+
   .sec_heading {
     max-width: 800px;
     margin: auto;
@@ -371,6 +410,7 @@
     max-width: 60rem;
     margin-bottom: 40px;
   }
+
   .cols {
     width: calc(100% / 4);
     @include ipad_b {
@@ -381,16 +421,19 @@
       padding: 10px 0;
     }
     padding: 10px;
+
     .inner {
       background-color: #020202;
       border: 1px solid #2563eb45;
       height: 100%;
       padding: 20px 28px;
       border-radius: 14px;
+
       .icon {
         width: 60px;
         margin: 0 auto 20px;
       }
+
       h3 {
         font-size: 18px;
         text-align: center;
@@ -401,9 +444,11 @@
 
 #success {
   padding: 0;
+
   h2 {
     margin-bottom: 30px;
   }
+
   .flex {
     .cols {
       width: calc(100% / 4);
@@ -415,6 +460,7 @@
         padding: 20px 0px;
       }
       padding: 0 10px;
+
       h4 {
         font-family: "Italic";
         //   border-bottom: 2px solid #2563EB;
@@ -422,6 +468,7 @@
         font-size: 36px;
         position: relative;
         margin-bottom: 30px;
+
         &::before {
           position: absolute;
           content: "";
@@ -432,6 +479,7 @@
           background-color: #2563eb;
         }
       }
+
       p {
         // text-transform: uppercase;
         font-size: 15px;
@@ -446,6 +494,7 @@
   .cmn_heading {
     margin-bottom: 30px;
   }
+
   .custom-arrow {
     position: absolute;
     top: unset;
@@ -457,6 +506,7 @@
     cursor: pointer;
     @include radius(100%);
   }
+
   .next-arrow {
     right: 45.5%;
     @include ipad_b {
@@ -469,6 +519,7 @@
       right: 32%;
     }
   }
+
   .prev-arrow {
     left: 45.5%;
     @include ipad_b {
@@ -481,8 +532,10 @@
       left: 32%;
     }
   }
+
   .item {
     padding: 0 8px;
+
     .inner {
       .image {
         @include img($pb: 75%);
@@ -490,11 +543,13 @@
         background: none;
         margin: 0 0 30px 0;
         @include radius(21px);
+
         img {
           @include object(contain);
           @include pos;
         }
       }
+
       a {
         color: $primary-color;
       }
@@ -513,6 +568,10 @@
     @include mobile_b {
       width: 100%;
     }
+  padding-top: 5rem;
+
+  .colL {
+    width: 60%;
     .cols {
       width: calc(100% / 2);
       @include mobile_md {
@@ -520,6 +579,7 @@
         padding: 10px 0;
       }
       padding: 10px;
+
       &:nth-child(1) {
         transform: translateY(39px);
         @include mobile_b {
@@ -539,7 +599,11 @@
           -ms-transform: unset;
           -o-transform: unset;
         }
+
+      &:nth-child(4) {
+        margin-top: -60px;
       }
+
       .outer_blk {
         height: 100%;
         display: flex;
@@ -549,12 +613,14 @@
           margin-bottom: 15px;
           font-size: 25px;
         }
+
         p {
           margin-bottom: 0;
         }
       }
     }
   }
+
   .colr {
     width: 40%;
     @include mobile_b {
@@ -564,9 +630,11 @@
     }
     align-self: center;
     padding-left: 40px;
+
     h2 {
       margin-bottom: 20px;
     }
+
     .btn_blk {
       margin-top: 20px;
     }
@@ -608,6 +676,7 @@
   }
   .two_cols {
     margin: 0 -10px;
+
     .cols {
       padding: 10px;
       @include mobile_md {
@@ -615,15 +684,19 @@
       }
     }
   }
+
   .btn_blk {
     margin-bottom: 20px;
   }
+
   .cta1 {
     a {
       color: $primary-color;
     }
+
     margin-top: 20px;
   }
+
   .image_o {
     padding-bottom: 37rem;
     @include mobile_md {
@@ -639,12 +712,14 @@
   .cmn_heading {
     margin-bottom: 40px;
   }
+
   .flex {
     margin: 0 -60px;
     @include mobile_md {
       margin: 0;
     }
   }
+
   .cols {
     width: calc(100% / 3);
     @include ipad_sm {
@@ -655,12 +730,14 @@
       padding: 10px;
     }
     padding: 10px 60px;
+
     .icon {
       border-radius: 100%;
       height: 130px;
       width: 130px;
       padding: 30px;
     }
+
     .text {
       margin-top: 30px;
     }
@@ -673,6 +750,7 @@
       h2 {
         font-size: 20px;
       }
+
       a {
         color: $primary-color;
       }
@@ -682,6 +760,7 @@
 
 #faq_sec {
   padding: 0;
+
   .sec_heading {
     max-width: 800px;
     margin: 0 auto 40px;
@@ -725,6 +804,7 @@
       padding: 0 16px;
       background: #2a2a2a;
       transition: max-height 0.4s ease, padding 0.3s ease;
+
       p {
         margin-bottom: 0;
       }
@@ -739,21 +819,25 @@
 
 .prjct-detail {
   padding-bottom: 2rem !important;
+
   .sec_heading {
     margin-bottom: 30px;
   }
+
   .image {
     @include img($pb: 49%);
     box-shadow: none;
     background: none;
     margin: 0;
     @include radius(21px);
+
     img {
       @include object(contain);
       @include pos;
     }
   }
 }
+
 
 #content {
   padding: 0;
@@ -773,17 +857,126 @@
     background: none;
     margin: 0;
     @include radius(21px);
+
     img {
       @include object(contain);
       @include pos;
     }
   }
+
   .col1 {
     padding-right: 0;
     padding-left: 40px;
   }
+
 }
 
 .trans_prj {
   padding: 6rem 0 14rem 0;
 }
+}
+
+.trans_prj {
+  padding: 6rem 0 14rem 0;
+}
+
+
+// tabs
+
+.tab-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem 0;
+  background-color: #000;
+  color: #fff;
+
+  .col1 {
+    width: 25%;
+
+    @include ipad_sm {
+      width: 100%;
+    }
+  }
+
+  .col2 {
+    width: 75%;
+    margin-top: 0;
+    padding-left: 4rem;
+
+    @include ipad_sm {
+      width: 100%;
+      padding-left: 0;
+      padding-top: 30px;
+    }
+  }
+
+
+  .tab-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    min-width: 250px;
+    background-color: #1A1A1A;
+    border-radius: 10px;
+    padding: 20px;
+
+    .tab-button {
+      padding: 12px 16px;
+      background: #1a1a1a;
+      border: 1px solid #4B4B4B;
+      color: #fff;
+      border-radius: 100px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+
+      &:hover,
+      &.active {
+        // background-color: #222;
+        color: #fff;
+        border: 1px solid $primary-color;
+      }
+    }
+  }
+
+  .tab-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    flex: 1;
+
+    @include mobile_md {
+           grid-template-columns: 1fr;
+    }
+
+    .card {
+      background: #1A1A1A;
+      border: 1px solid #262626;
+      padding: 30px;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+      height: fit-content;
+
+      &:hover {
+        transform: translateY(-5px);
+      }
+
+      h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .arrow {
+          font-size: 1rem;
+          color: $primary-color;
+        }
+      }
+
+      p {
+        color: #fff;
+      }
+    }
+  }
+}
+
