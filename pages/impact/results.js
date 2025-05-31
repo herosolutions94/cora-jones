@@ -18,7 +18,7 @@ const Results = () => {
               </div>
             </div>
             <div className="col2">
-              <div className="image_o">
+              <div className="image_o mrgn_top">
                 <img src="images/result.png" alt="" />
               </div>
             </div>

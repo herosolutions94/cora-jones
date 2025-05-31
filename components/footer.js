@@ -70,19 +70,19 @@ const Footer = () => {
                   <Link href="/"> Home</Link>
                 </li>
                 <li>
-                  <Link href="">About</Link>
+                  <Link href="/about">About</Link>
                 </li>
                 <li>
-                  <Link href="">Projects</Link>
+                  <Link href="/project">Projects</Link>
                 </li>
                 <li>
-                  <Link href="">Services</Link>
+                  <Link href="/services">Services</Link>
                 </li>
                 <li>
-                  <Link href=""> Impact</Link>
+                  <Link href="/impact"> Impact</Link>
                 </li>
                 <li>
-                  <Link href="">Services</Link>
+                  <Link href="/contact">Contact Us</Link>
                 </li>
               </ul>
             </div>

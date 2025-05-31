@@ -56,7 +56,7 @@ const Scalable = () => {
                 <p>Certifications, Compliance & Real-World Throughput</p>
               </div>
               <div className="cta">
-                <Link href="" className="site_btn">
+                <Link href="/services" className="site_btn">
                   Read More
                 </Link>
               </div>

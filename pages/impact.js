@@ -10,7 +10,7 @@ import Strategy from "./impact/strategy";
 
 const Impact = () => {
   return (
-    <>
+    <main>
       <Results />
       <Win />
       <Transformation />
@@ -19,7 +19,7 @@ const Impact = () => {
       <Performance />
       <Testimonials />
       <Cta />
-    </>
+    </main>
   );
 };
 

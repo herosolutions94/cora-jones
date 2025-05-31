@@ -26,7 +26,7 @@ const Reliable = () => {
                 </p>
               </div>
               <div className="cta">
-                <Link href="" className="site_btn">
+                <Link href="/case-study" className="site_btn">
                   View Case Study
                 </Link>
               </div>
