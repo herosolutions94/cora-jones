@@ -20,7 +20,7 @@ const Cta = () => {
               </p>
             </div>
             <div className="cta">
-              <Link href="" className="site_btn">
+              <Link href="/contact" className="site_btn">
                 Let’s Connect
               </Link>
             </div>

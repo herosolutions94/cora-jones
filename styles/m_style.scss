@@ -20,6 +20,9 @@
       margin-bottom: 20px;
     }
   }
+  &.project_banner{
+    padding-bottom: 5rem;
+  }
 }
 
 .outer_blk {
@@ -44,7 +47,13 @@
 
   .col {
     @include ipad_b {
-    width: 32%;
+    width: 100%;
+    flex: unset;
+    margin-bottom: 2rem;
+    }
+    @include ipad_sm{
+      width: 100%;
+    }
 
     .image {
       height: 100%;
@@ -126,6 +135,11 @@
           background-color: #020202;
           @include mobile_md {
             padding: 28px;
+            
+          }
+          @include mobile_sm{
+            flex-direction: column;
+            gap: 2rem;
           }
           h6 {
             font-size: 20px;
@@ -223,17 +237,19 @@
 
   .outer_blk {
     display: flex;
+
     @include ipad_sm {
       flex-wrap: wrap;
+      flex-direction: column-reverse;
     }
+
     .heading {
       width: 40%;
+
       @include ipad_sm {
         width: 100%;
-        padding-bottom: 20px;
+        padding-top: 20px;
       }
-    .heading {
-      width: 40%;
 
       h2 {
         font-size: 22px;
@@ -246,26 +262,28 @@
 
     .flex {
       flex: 1;
+
       @include ipad_sm {
         flex: unset;
         width: 100%;
         justify-content: center;
       }
+
       .cols {
         width: calc(100% / 3);
+        padding: 0 20px;
+
         @include mobile_md {
           width: calc(100% / 2);
           padding: 15px 0;
         }
+
         @include mobile_xs {
           width: 100%;
         }
-        padding: 0 20px;
 
         h4 {
           font-family: "Italic";
-          //   border-bottom: 2px solid #2563EB;
-          //   padding-bottom: 10px;
           font-size: 40px;
           position: relative;
           margin-bottom: 30px;
@@ -289,6 +307,7 @@
     }
   }
 }
+
 
 .service_pg {
   padding: 0;
@@ -563,15 +582,14 @@
       flex-direction: column-reverse;
     }
   }
+  
+
   .colL {
     width: 60%;
     @include mobile_b {
       width: 100%;
     }
-  padding-top: 5rem;
-
-  .colL {
-    width: 60%;
+    padding-top: 5rem;
     .cols {
       width: calc(100% / 2);
       @include mobile_md {
@@ -599,10 +617,10 @@
           -ms-transform: unset;
           -o-transform: unset;
         }
-
-      &:nth-child(4) {
-        margin-top: -60px;
       }
+      // &:nth-child(4) {
+      //   margin-top: -60px;
+      // }
 
       .outer_blk {
         height: 100%;
@@ -618,8 +636,10 @@
           margin-bottom: 0;
         }
       }
+    
     }
   }
+  
 
   .colr {
     width: 40%;
@@ -651,8 +671,20 @@
     &:last-child {
       margin-bottom: 0;
     }
-    @include ipad_sm {
-      flex-direction: unset;
+    
+    &.single_block{
+      @include ipad_sm {
+        flex-direction: unset!important;
+      }
+      .btn_blk{
+        .site_btn{
+          height: 4rem;
+          padding: 0 2rem;
+          @include mobile_sm{
+            width: unset!important;
+          }
+        }
+      }
     }
     &.project_blk_outer {
       @include mobile_md {
@@ -679,7 +711,7 @@
 
     .cols {
       padding: 10px;
-      @include mobile_md {
+      @include ipad_sm {
         width: 100%;
       }
     }
@@ -874,11 +906,6 @@
 .trans_prj {
   padding: 6rem 0 14rem 0;
 }
-}
-
-.trans_prj {
-  padding: 6rem 0 14rem 0;
-}
 
 
 // tabs
@@ -919,7 +946,13 @@
     background-color: #1A1A1A;
     border-radius: 10px;
     padding: 20px;
-
+    @include ipad_sm{
+      flex-direction: row;
+      overflow-x: auto;
+      gap: 10px;
+      padding: 10px;
+      min-width: auto;
+    }
     .tab-button {
       padding: 12px 16px;
       background: #1a1a1a;
@@ -928,6 +961,9 @@
       border-radius: 100px;
       cursor: pointer;
       transition: all 0.3s ease;
+      @include ipad_sm{
+        flex-shrink: 0;
+      }
 
       &:hover,
       &.active {
@@ -979,4 +1015,3 @@
     }
   }
 }
-

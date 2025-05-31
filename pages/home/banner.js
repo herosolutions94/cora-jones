@@ -23,7 +23,7 @@ const Banner = () => {
               </p>
             </div>
             <div className="cta">
-              <Link href="" className="site_btn white">
+              <Link href="/contact" className="site_btn white">
                 Get Started <i className="fas fa-arrow-right"></i>
               </Link>
             </div>

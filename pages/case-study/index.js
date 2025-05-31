@@ -6,13 +6,13 @@ import Featured from "./featured";
 import SmallBanner from "./small-banner";
 const Index = () => {
   return (
-    <>
+    <main>
       <SmallBanner />
       <Featured />
       <Capability />
       <Testimonials />
       <Cta />
-    </>
+    </main>
   );
 };
 

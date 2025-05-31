@@ -81,16 +81,6 @@ export default function Header() {
                     Cloud-Native ML Enablement
                   </Link>
                 </li>
-                <li>
-                  <Link href="/impact" onClick={closeMenu}>
-                    Impact
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/case-study" onClick={closeMenu}>
-                    Case Studies
-                  </Link>
-                </li>
               </ul>
             </li>
 

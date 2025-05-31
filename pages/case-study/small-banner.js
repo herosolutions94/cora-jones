@@ -18,12 +18,12 @@ const SmallBanner = () => {
             </div>
             <ul className="cta">
               <li>
-                <Link href="" className="site_btn">
+                <Link href="/contact" className="site_btn">
                   Get in Touch <i className="fas fa-arrow-right"></i>
                 </Link>
               </li>
               <li>
-                <Link href="" className="site_btn white">
+                <Link href="/contact" className="site_btn white">
                   Request a Consultation<i className="fas fa-arrow-right"></i>
                 </Link>
               </li>

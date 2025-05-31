@@ -1,4 +1,5 @@
 'use client';
+import Link from 'next/link';
 import React, { useState } from 'react';
 
 const tabs = [
@@ -66,10 +67,10 @@ export default function TabSection() {
             <div className='col2'>
                 <div className="tab-content">
                     {content[activeTab].map((item, index) => (
-                        <div className="card" key={index}>
+                        <Link href="" className="card" key={index}>
                             <h3>{item.title} <span className="arrow"><img src='images/a1.svg' /></span></h3>
                             <p>{item.description}</p>
-                        </div>
+                        </Link>
                     ))}
                 </div>
             </div>

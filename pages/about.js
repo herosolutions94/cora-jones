@@ -45,7 +45,7 @@ export default function About() {
                     indispensable."
                   </div>
                   <div className="btn_blk">
-                    <Link href="" className="site_btn">
+                    <Link href="/contact" className="site_btn">
                       Contact Us
                     </Link>
                   </div>
@@ -225,7 +225,7 @@ export default function About() {
                   we create a professional product using artificial intelligence
                 </h2>
                 <div className="btn_blk">
-                  <Link href="" className="site_btn">
+                  <Link href="/contact" className="site_btn">
                     Contact Us
                   </Link>
                 </div>

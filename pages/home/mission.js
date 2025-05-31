@@ -14,7 +14,7 @@ const Mission = () => {
                 <div className="image">
                   <img src="images/miss_1.png" alt="" />
                 </div>
-                <div className="content">
+                <div className="content pt_lt">
                   <h6>Latest AI Technologies</h6>
                 </div>
               </div>
@@ -24,7 +24,7 @@ const Mission = () => {
                 <div className="image">
                   <img src="images/miss_2.png" alt="" />
                 </div>
-                <div className="content">
+                <div className="content pt_lt">
                   <h6>AI-Powered Automation</h6>
                 </div>
               </div>
@@ -34,7 +34,7 @@ const Mission = () => {
                 <div className="image">
                   <img src="images/miss_3.png" alt="" />
                 </div>
-                <div className="content">
+                <div className="content pt_lt">
                   <h6>Team Of Experts</h6>
                 </div>
               </div>

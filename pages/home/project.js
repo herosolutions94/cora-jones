@@ -16,7 +16,7 @@ const Project = () => {
             </div>
             <div className="cols">
               <div className="cta">
-                <Link href="" className="site_btn">
+                <Link href="/project" className="site_btn">
                   View All Projects
                 </Link>
               </div>
@@ -46,7 +46,7 @@ const Project = () => {
                 </ul>
               </div>
               <div className="cta1">
-                <Link href="" className="site_btn">
+                <Link href="/project/detail" className="site_btn">
                   View detail
                 </Link>
               </div>
@@ -81,7 +81,7 @@ const Project = () => {
                 </ul>
               </div>
               <div className="cta1">
-                <Link href="" className="site_btn">
+                <Link href="/project/detail" className="site_btn">
                   View detail
                 </Link>
               </div>

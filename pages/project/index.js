@@ -8,7 +8,7 @@ export default function Projects() {
   return (
     <div>
       <main>
-        <section id="smallbanner"className="services_banner">
+        <section id="smallbanner"className="services_banner project_banner">
           <div className="contain">
             <div className="text-center sec_heading">
               <h1>Featured Projects</h1>
@@ -64,7 +64,7 @@ export default function Projects() {
                       </ul>
                     </div>
                     <div className="cta1">
-                      <Link href="" className="">
+                      <Link href="/project/detail" className="">
                         Read More <i class="fa-solid fa-arrow-right"></i>
                       </Link>
                     </div>
@@ -105,7 +105,7 @@ export default function Projects() {
                       </ul>
                     </div>
                     <div className="cta1">
-                      <Link href="" className="">
+                      <Link href="/project/detail" className="">
                         Read More <i class="fa-solid fa-arrow-right"></i>
                       </Link>
                     </div>
@@ -146,7 +146,7 @@ export default function Projects() {
                   </ul>
                 </div>
                 <div className="cta1">
-                  <Link href="" className="">
+                  <Link href="/project/detail" className="">
                     Read More <i class="fa-solid fa-arrow-right"></i>
                   </Link>
                 </div>
