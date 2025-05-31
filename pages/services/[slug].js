@@ -4,7 +4,6 @@ import Slider from "react-slick";
 import Cta from "@/components/cta";
 import Testimonials from "@/components/testimonials";
 
-
 // Custom Arrows
 function NextArrow(props) {
   const { onClick } = props;
@@ -62,7 +61,7 @@ export default function Detail() {
       {
         breakpoint: 769,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
           arrows: true,
         },
       },
@@ -106,42 +105,44 @@ export default function Detail() {
       </section>
 
       <section id="compliance">
-        <div className="contain outer_blk">
-          <div className="sec_heading">
-            <h2>Compliance-Ready, Scalable, and High-Trust Systems</h2>
-            <p>Certifications, Compliance & Real-World Throughput</p>
-          </div>
-          <div className="flex">
-            <div className="cols">
-              <div className="inner">
-                <div className="icon">
-                  <img src="/images/cp1.png" />
-                </div>
-                <h3>Modular AI system design</h3>
-              </div>
+        <div className="contain">
+          <div className=" outer_blk">
+            <div className="sec_heading">
+              <h2>Compliance-Ready, Scalable, and High-Trust Systems</h2>
+              <p>Certifications, Compliance & Real-World Throughput</p>
             </div>
-            <div className="cols">
-              <div className="inner">
-                <div className="icon">
-                  <img src="/images/cp2.png" />
+            <div className="flex">
+              <div className="cols">
+                <div className="inner">
+                  <div className="icon">
+                    <img src="/images/cp1.png" />
+                  </div>
+                  <h3>Modular AI system design</h3>
                 </div>
-                <h3>Multi-cloud & hybrid cloud readiness</h3>
               </div>
-            </div>
-            <div className="cols">
-              <div className="inner">
-                <div className="icon">
-                  <img src="/images/cp3.png" />
+              <div className="cols">
+                <div className="inner">
+                  <div className="icon">
+                    <img src="/images/cp2.png" />
+                  </div>
+                  <h3>Multi-cloud & hybrid cloud readiness</h3>
                 </div>
-                <h3>CI/CD for ML pipelines</h3>
               </div>
-            </div>
-            <div className="cols">
-              <div className="inner">
-                <div className="icon">
-                  <img src="/images/cp4.png" />
+              <div className="cols">
+                <div className="inner">
+                  <div className="icon">
+                    <img src="/images/cp3.png" />
+                  </div>
+                  <h3>CI/CD for ML pipelines</h3>
                 </div>
-                <h3>High-throughput model hosting</h3>
+              </div>
+              <div className="cols">
+                <div className="inner">
+                  <div className="icon">
+                    <img src="/images/cp4.png" />
+                  </div>
+                  <h3>High-throughput model hosting</h3>
+                </div>
               </div>
             </div>
           </div>
@@ -212,34 +213,34 @@ export default function Detail() {
       </section>
       <section id="approach">
         <div className="contain">
-          <div className="flex ">
+          <div className="flex flex1">
             <div className="colL">
-                <div className="flex">
-              <div className="cols">
-                <div className="outer_blk sm_outer">
-                  <h4>Assessment & Planning</h4>
-                  <p>Evaluate existing systems and opportunities</p>
+              <div className="flex">
+                <div className="cols">
+                  <div className="outer_blk sm_outer">
+                    <h4>Assessment & Planning</h4>
+                    <p>Evaluate existing systems and opportunities</p>
+                  </div>
                 </div>
-              </div>
 
-              <div className="cols">
-                <div className="outer_blk sm_outer">
-                  <h4>Design & Prototyping</h4>
-                  <p>Architect infrastructure blueprints</p>
+                <div className="cols">
+                  <div className="outer_blk sm_outer">
+                    <h4>Design & Prototyping</h4>
+                    <p>Architect infrastructure blueprints</p>
+                  </div>
                 </div>
-              </div>
-              <div className="cols">
-                <div className="outer_blk sm_outer">
-                  <h4>Governance & Handoff</h4>
-                  <p>Ensure compliance, continuity, and knowledge transfer</p>
+                <div className="cols">
+                  <div className="outer_blk sm_outer">
+                    <h4>Governance & Handoff</h4>
+                    <p>Ensure compliance, continuity, and knowledge transfer</p>
+                  </div>
                 </div>
-              </div>
-              <div className="cols">
-                <div className="outer_blk sm_outer">
-                  <h4>Implementation & Optimization</h4>
-                  <p>Deploy and refine scalable AI environments</p>
+                <div className="cols">
+                  <div className="outer_blk sm_outer">
+                    <h4>Implementation & Optimization</h4>
+                    <p>Deploy and refine scalable AI environments</p>
+                  </div>
                 </div>
-              </div>
               </div>
             </div>
             <div className="colr">

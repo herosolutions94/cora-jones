@@ -1,17 +1,17 @@
 .two_cols {
   .cols {
     width: 50%;
-    &.abt_right_col{
+    &.abt_right_col {
       align-self: flex-end;
     }
   }
-  &.abt_two_cols{
+  &.abt_two_cols {
     margin-bottom: 4rem;
-    .cols{
-      h2{
+    .cols {
+      h2 {
         margin-bottom: 0;
       }
-      @include ipad{
+      @include ipad {
         width: 100%;
       }
     }
@@ -37,7 +37,7 @@
   @include radius(15px);
   border-left: 1px solid $primary-color;
   position: relative;
-    padding-bottom: 48px;
+  padding-bottom: 48px;
 }
 .image_o {
   position: relative;
@@ -63,16 +63,16 @@
   padding-top: 20rem;
   padding-bottom: 1rem;
   background-image: url(/images/banner-bg.jpg);
-  @include ipad_sm{
+  @include ipad_sm {
     padding-top: 14rem;
   }
-  @include mobile{
+  @include mobile {
     padding-top: 5rem;
   }
   @include bg;
-  &:before{
+  &:before {
     @include pos;
-    content: '';
+    content: "";
     background: linear-gradient(180deg, #000000c4, #000);
   }
   .inside {
@@ -88,7 +88,7 @@
       margin: 0 auto;
       margin-top: 3rem;
       padding-bottom: 5rem;
-      @include mobile_sm{
+      @include mobile_sm {
         width: 100%;
       }
     }
@@ -98,17 +98,20 @@
 .sec_features {
   text-align: left;
   padding-bottom: 0;
-&.sec_changes{
-  padding-top: 16rem;
-}
-  .inner_block {
-    @include ipad{
-      width: 100%!important;
+  &.sec_changes {
+    padding-top: 14rem;
+    @include mobile_md {
+      padding-top: 4rem;
     }
-    @include mobile{
-      .flex{
+  }
+  .inner_block {
+    @include ipad {
+      width: 100% !important;
+    }
+    @include mobile {
+      .flex {
         justify-content: center;
-        @include mobile{
+        @include mobile {
           margin: -1rem;
         }
       }
@@ -116,38 +119,38 @@
     .cols {
       width: calc(100% / 3);
       padding: 0 30px;
-      @include ipad_sm{
+      @include ipad_sm {
         padding: 0 10px;
       }
-      @include mobile_md{
+      @include mobile_md {
         width: 50%;
         padding: 1rem;
       }
-      
+
       .inner {
         display: flex;
         align-items: center;
-        @include mobile_sm{
+        @include mobile_sm {
           flex-direction: column;
           align-items: unset;
         }
         .percentage {
           width: 59%;
-          @include mobile_sm{
+          @include mobile_sm {
             width: 100%;
           }
           p {
             font-size: 30px;
             margin-bottom: 0;
             text-align: right;
-            @include ipad_sm{
+            @include ipad_sm {
               font-size: 2rem;
             }
-            @include mobile_sm{
+            @include mobile_sm {
               text-align: left;
             }
-            strong{
-              font-family: 'SemiBold';
+            strong {
+              font-family: "SemiBold";
               font-style: italic;
             }
           }
@@ -156,7 +159,7 @@
           position: relative;
           padding-left: 15px;
           margin-left: 15px;
-          @include mobile_sm{
+          @include mobile_sm {
             padding-left: 0;
             margin-left: 0;
             margin-top: 2rem;
@@ -166,7 +169,7 @@
             font-size: 14px;
             line-height: 18px;
             text-transform: uppercase;
-            font-family: 'Medium';
+            font-family: "Medium";
           }
           &::before {
             @include pos($t: 5px);
@@ -174,7 +177,7 @@
             width: 1px;
             height: 77%;
             background: #ffffff5c;
-            @include mobile_sm{
+            @include mobile_sm {
               height: 1px;
               width: 77%;
               top: -10px;
@@ -194,7 +197,7 @@
       .cta {
         margin-top: 20px;
         width: fit-content;
-        @include mobile_sm{
+        @include mobile_sm {
           width: 100%;
         }
       }
@@ -203,22 +206,22 @@
   .quote_block {
     margin-top: 25px;
     .image {
-      width:80px;
+      width: 80px;
       height: 65px;
-      @include pos($r:null,$b:null,$t:1rem,$l:2rem);
+      @include pos($r: null, $b: null, $t: 1rem, $l: 2rem);
     }
     .quote {
       padding-left: 20px;
       h3 {
         font-family: "Italic";
         font-size: 4rem;
-        @include mobile_sm{
+        @include mobile_sm {
           font-size: 2.5rem;
         }
       }
       p {
         color: rgba(255, 255, 255, 0.6);
-        font-size:1.8rem;
+        font-size: 1.8rem;
         margin-top: 2rem;
         margin-bottom: 0;
       }
@@ -230,7 +233,7 @@
   .center_heading {
     max-width: 60rem;
     margin: 0 auto 3rem;
-    &.groundup_heading{
+    &.groundup_heading {
       max-width: 80rem;
     }
   }
@@ -240,10 +243,10 @@
     .cols {
       width: calc(100% / 3);
       padding: 15px;
-      @include ipad_sm{
+      @include ipad_sm {
         width: 50%;
       }
-      @include mobile_sm{
+      @include mobile_sm {
         width: 100%;
       }
       .inner {
@@ -255,7 +258,7 @@
           width: 7rem;
           height: 7rem;
           overflow: hidden;
-          img{
+          img {
             @include object(contain);
           }
         }
@@ -265,7 +268,7 @@
           align-self: center;
           h6 {
             margin-bottom: 0;
-       font-size: 25px;
+            font-size: 25px;
           }
         }
       }
@@ -276,14 +279,14 @@
 // ==== sec_cta ===
 .sec_cta {
   .inner {
-   max-width: 70rem;
+    max-width: 70rem;
     margin: 0 auto;
     text-align: center;
     .cta {
       width: fit-content;
       margin: 0 auto;
       margin-top: 30px;
-      @include mobile_sm{
+      @include mobile_sm {
         width: 100%;
       }
     }
@@ -296,12 +299,12 @@
   .head {
     display: flex;
     margin-bottom: 3rem;
-    @include ipad_sm{
+    @include ipad_sm {
       flex-flow: wrap;
     }
     .cols {
       align-self: center;
-      @include ipad_sm{
+      @include ipad_sm {
         width: 100%;
         align-self: unset;
       }
@@ -309,10 +312,10 @@
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        @include ipad_sm{
+        @include ipad_sm {
           justify-content: flex-start;
         }
-        @include mobile_sm{
+        @include mobile_sm {
           display: block;
         }
       }
@@ -324,23 +327,23 @@
     margin-top: 20px;
     margin-bottom: 60px;
     padding: 4rem;
-    @include ipad_sm{
+    @include ipad_sm {
       flex-direction: column-reverse;
       gap: 3rem;
     }
-    @include mobile_sm{
+    @include mobile_sm {
       padding: 2rem;
     }
     &:nth-child(odd) {
       flex-direction: row-reverse;
-      @include ipad_sm{
+      @include ipad_sm {
         flex-direction: column-reverse;
       }
       margin-bottom: 0;
       .col1 {
         padding-right: 0px;
         padding-left: 40px;
-        @include ipad_sm{
+        @include ipad_sm {
           padding-left: 0;
         }
       }
@@ -349,16 +352,16 @@
       width: 50%;
       padding-right: 40px;
       align-self: center;
-      @include ipad_sm{
+      @include ipad_sm {
         width: 100%;
         padding-right: 0;
       }
-      p{
+      p {
         color: rgba(255, 255, 255, 0.76);
       }
-      h3{
+      h3 {
         font-size: 3rem;
-        @include mobile_sm{
+        @include mobile_sm {
           font-size: 2rem;
         }
       }
@@ -389,16 +392,15 @@
       .cta1 {
         margin-top: 35px;
         width: fit-content;
-        @include mobile_sm{
+        @include mobile_sm {
           width: 100%;
         }
-        
       }
     }
     .col2 {
       width: 50%;
       align-self: center;
-      @include ipad_sm{
+      @include ipad_sm {
         width: 100%;
         align-self: unset;
       }
@@ -413,16 +415,16 @@
         }
       }
     }
-    &:nth-child(odd){
-      .col2{
-        .image_o{
-          img{
+    &:nth-child(odd) {
+      .col2 {
+        .image_o {
+          img {
             object-position: left;
           }
         }
       }
     }
-    &.project_blk_outer{
+    &.project_blk_outer {
       .image_o {
         @include img(70%);
         box-shadow: none;
@@ -431,18 +433,18 @@
         img {
           @include pos;
           @include object;
-          object-fit: cover!important;
+          object-fit: cover !important;
         }
-      }       
+      }
       padding: 4rem;
-      .text{
+      .text {
         margin-top: 2rem;
-        .btn_blk{
-          .site_btn{
+        .btn_blk {
+          .site_btn {
             padding: 0 2rem;
             min-width: unset;
             height: 4rem;
-            @include mobile_sm{
+            @include mobile_sm {
               width: 100%;
             }
           }
@@ -458,25 +460,27 @@
   .flex {
     background: $sec_bg;
     padding: 8rem;
+    @include ipad_b {
+      padding: 4rem;
+    }
     @include radius(15px);
-    border: 1px solid rgba($primary-color,0.2);
-    @include ipad{
+    border: 1px solid rgba($primary-color, 0.2);
+    @include ipad {
       padding: 5rem;
     }
-    @include mobile{
+    @include mobile {
       padding: 3rem;
     }
 
-    
-    .cols{
-      @include ipad_sm{
+    .cols {
+      @include ipad_sm {
         width: 100%;
         padding-right: 0;
       }
     }
     .col1 {
       padding-right: 30px;
-      @include ipad_sm{
+      @include ipad_sm {
         width: 100%;
         padding-right: 0;
       }
@@ -484,7 +488,7 @@
         padding-left: 0;
         display: flex;
         flex-wrap: wrap;
-        @include ipad_sm{
+        @include ipad_sm {
           margin: -1rem;
           margin-bottom: 3rem;
         }
@@ -492,14 +496,14 @@
         li {
           &:nth-child(even) {
             transform: translateY(33px);
-            @include ipad_sm{
+            @include ipad_sm {
               transform: translateY(0px);
             }
           }
           width: calc(100% / 2);
           list-style: none;
           padding: 10px;
-          @include mobile_sm{
+          @include mobile_sm {
             width: 100%;
           }
           .inner {
@@ -528,17 +532,17 @@
     .col2 {
       padding-left: 40px;
       align-self: center;
-      @include ipad_sm{
+      @include ipad_sm {
         padding-left: 0;
         align-self: unset;
       }
-      h2{
+      h2 {
         margin-bottom: 2rem;
       }
       .cta {
         width: fit-content;
         margin-top: 30px;
-        @include mobile_sm{
+        @include mobile_sm {
           width: 100%;
         }
       }
@@ -547,9 +551,10 @@
 }
 // ==== sec_services ====
 .sec_services {
-  padding-bottom: 4rem;
+  margin-bottom: 8rem;
+  padding-bottom: 0;
   .cmn_heading {
-   max-width: 70rem;
+    max-width: 70rem;
     margin: 0 auto;
     text-align: center;
     margin-bottom: 20px;
@@ -562,7 +567,7 @@
     height: 100%;
     margin: 10px;
     align-items: center;
-    @include mobile_sm{
+    @include mobile_sm {
       flex-direction: column;
     }
     .image {
@@ -572,8 +577,8 @@
       @include radius(100%);
       background: $black;
       margin-right: 20px;
-      border: 1px solid rgba($primary-color,0.3);
-      @include mobile_sm{
+      border: 1px solid rgba($primary-color, 0.3);
+      @include mobile_sm {
         margin-right: 0;
       }
       img {
@@ -584,7 +589,7 @@
     }
     .text {
       width: 70%;
-      @include mobile_sm{
+      @include mobile_sm {
         width: 100%;
         margin-top: 2rem;
         text-align: center;
@@ -599,31 +604,37 @@
 
   .next-arrow {
     right: 45.5%;
-    @include ipad{
+    @include ipad {
       right: 44.5%;
     }
-    @include ipad_sm{
+    @include ipad_b {
+      right: 44%;
+    }
+    @include ipad_sm {
       right: 42.5%;
     }
-    @include mobile{
+    @include mobile {
       right: 40.5%;
     }
-    @include mobile_md{
+    @include mobile_md {
       right: 0;
     }
   }
   .prev-arrow {
     left: 45.5%;
-    @include ipad{
+    @include ipad {
       left: 44.5%;
     }
-    @include ipad_sm{
+    @include ipad_b {
+      left: 44%;
+    }
+    @include ipad_sm {
       left: 42.5%;
     }
-    @include mobile{
+    @include mobile {
       left: 40.5%;
     }
-    @include mobile_md{
+    @include mobile_md {
       left: unset;
       right: 6rem;
     }
@@ -632,7 +643,7 @@
 // === sec_changes
 .sec_changes {
   .inner_block {
-    width: 80%;
+    max-width: 100rem;
     margin: 0 auto;
     .cols {
       .inner {
@@ -649,8 +660,11 @@
 .sec_transform {
   padding-bottom: 0;
   .cmn_heading {
-   max-width: 70rem;
-   margin-bottom: 3rem;
+    max-width: 70rem;
+    margin-bottom: 2rem;
+    @include ipad_sm {
+      margin-bottom: 0rem;
+    }
   }
   .listings {
     padding-top: 10rem;
@@ -659,7 +673,7 @@
     padding-left: 0;
     gap: 33px;
     justify-content: center;
-    @include ipad_sm{
+    @include ipad_sm {
       justify-content: flex-start;
       overflow-y: auto;
     }
@@ -672,7 +686,7 @@
       position: relative;
       min-width: 136px;
       @include radius(50px);
-      @include ipad_sm{
+      @include ipad_sm {
         width: max-content;
         min-width: unset;
       }
@@ -699,7 +713,7 @@
         line-height: 10px;
         font-size: 14px;
         font-family: "SemiBold";
-        @include ipad_sm{
+        @include ipad_sm {
           width: max-content;
         }
       }
@@ -709,7 +723,7 @@
     width: 35%;
     align-self: center;
     padding-right: 2rem;
-    @include ipad_sm{
+    @include ipad_b {
       width: 100%;
       align-self: unset;
       padding-right: 0;
@@ -718,7 +732,7 @@
   .col2 {
     width: 65%;
     padding-left: 50px;
-    @include ipad_sm{
+    @include ipad_b {
       width: 100%;
       padding-left: 0;
       margin-top: 2rem;
@@ -730,7 +744,7 @@
       border: 1px solid rgba(100, 116, 139, 0.62);
       display: flex;
       flex-wrap: wrap;
-      @include mobile_sm{
+      @include mobile_sm {
         padding: 2rem;
         flex-wrap: nowrap;
         overflow-y: auto;
@@ -738,12 +752,11 @@
 
       .cols {
         width: 50%;
-        @include mobile_sm{
+        @include mobile_sm {
           width: 100%;
         }
 
         &:first-child {
-          
           ul {
             &::before {
               display: none;
@@ -753,7 +766,7 @@
         ul {
           position: relative;
           padding-left: 0;
-          @include mobile_sm{
+          @include mobile_sm {
             width: max-content;
           }
 
@@ -764,7 +777,7 @@
             width: 1px;
             height: 99%;
             background: #383838;
-            @include mobile_sm{
+            @include mobile_sm {
               left: 0;
             }
           }
@@ -773,7 +786,7 @@
             list-style: none;
             padding: 10px 0;
             border-bottom: 1px solid #383838;
-            @include mobile_sm{
+            @include mobile_sm {
               padding: 10px 10px;
             }
             &:last-child {
@@ -798,8 +811,11 @@
 }
 // ==== contact_form
 .contact_form {
-  padding-top: 16rem;
+  padding-top: 13rem;
   padding-bottom: 0;
+  @include mobile_md {
+    padding-top: 9rem;
+  }
   .main_heading {
     text-align: center;
     margin-bottom: 30px;
@@ -807,6 +823,11 @@
   .col1 {
     width: 40%;
     padding-right: 15px;
+    @include ipad_b {
+      width: 100%;
+      padding-right: 0;
+      padding-bottom: 15px;
+    }
     .inner_card {
       background: $sec_bg;
       overflow: hidden;
@@ -814,6 +835,12 @@
       border: 1px solid rgba(37, 99, 235, 0.28);
       .image_o {
         padding-bottom: 31rem;
+        @include ipad_b {
+          padding-bottom: 53rem;
+        }
+        @include mobile_md {
+          padding-bottom: 23rem;
+        }
         img {
           object-fit: cover;
           object-position: top;
@@ -845,9 +872,15 @@
   }
   .col2 {
     width: 60%;
+    @include ipad_b {
+      width: 100%;
+    }
     form {
       background: $sec_bg;
       padding: 40px;
+      @include mobile_md {
+        padding: 26px;
+      }
       @include radius(30px);
       border: 1px solid rgba(37, 99, 235, 0.28);
       .txtGrp {
@@ -865,20 +898,34 @@
 }
 // ===== sec_result
 .sec_result {
-  padding-top: 16rem;
+  padding-top: 13rem;
+  @include mobile_md {
+    padding-top: 9rem;
+  }
   padding-bottom: 0;
   .col1 {
     width: 50%;
+    @include mobile_b {
+      width: 100%;
+    }
     align-self: center;
-    p{
+    p {
       font-size: 22px;
     }
   }
   .col2 {
     width: 50%;
-
+    @include mobile_b {
+      width: 100%;
+    }
     .image_o {
       padding-bottom: 50rem;
+      @include ipad_sm {
+        padding-bottom: 37rem;
+      }
+      @include mobile_md {
+        padding-bottom: 36rem;
+      }
       img {
         object-fit: contain;
       }
@@ -893,8 +940,27 @@
     width: 100%;
     .inner_card {
       margin-top: 20px;
+      @include mobile_md {
+        flex-wrap: nowrap;
+        overflow-y: auto;
+      }
       .cols {
         width: calc(100% / 3);
+        @include mobile_md {
+          width: 100%;
+        }
+        ul {
+          @include mobile_md {
+            width: max-content;
+          }
+          li {
+            h5 {
+              @include ipad_sm {
+                font-size: 15px;
+              }
+            }
+          }
+        }
       }
     }
   }
@@ -902,22 +968,35 @@
 // ==== sec_reliable
 .sec_reliable {
   padding-bottom: 0;
-  .col1 {
-    width: 50%;
-    .image_o {
-      padding-bottom: 100%;
-      img {
-        object-fit: contain;
+  .flex {
+    @include mobile_md {
+      flex-direction: column-reverse;
+    }
+    .col1 {
+      width: 50%;
+      @include mobile_md {
+        width: 100%;
+      }
+      .image_o {
+        padding-bottom: 100%;
+        img {
+          object-fit: contain;
+        }
       }
     }
-  }
-  .col2 {
-    width: 50%;
-    align-self: center;
-    padding-left: 60px;
-    .cta {
-      margin-top: 20px;
-      width: fit-content;
+    .col2 {
+      width: 50%;
+      @include mobile_md {
+        width: 100%;
+        padding-left: 0;
+        padding-bottom: 15px;
+      }
+      align-self: center;
+      padding-left: 60px;
+      .cta {
+        margin-top: 20px;
+        width: fit-content;
+      }
     }
   }
 }
@@ -926,22 +1005,30 @@
 .sec_perform {
   .cmn_heading {
     text-align: center;
-    width: 46%;
+    max-width: 54rem;
     margin: 0 auto 40px;
   }
   .flex {
     .cols {
       width: calc(100% / 4);
+      @include ipad_sm {
+        width: calc(100% / 2);
+      }
+      @include mobile_md {
+        width: 100%;
+        padding: 10px 0;
+      }
       padding: 10px;
       .inner {
         background: $sec_bg;
-        padding:40px 20px;
+        padding: 40px 20px;
+        height: 100%;
         @include radius(10px);
         border: 1px solid rgba(37, 99, 235, 0.28);
         .image {
-           width: 60px;
-    margin: 0 auto;
-    margin-bottom: 25px;
+          width: 60px;
+          margin: 0 auto;
+          margin-bottom: 25px;
         }
         .text {
           text-align: center;
@@ -959,6 +1046,9 @@
 .sec_testimonials {
   padding-bottom: 0;
   padding-top: 0;
+  @include mobile_md {
+    padding-bottom: 8rem;
+  }
   .cmn_heading {
     text-align: center;
     margin-bottom: 20px;
@@ -972,6 +1062,9 @@
       border: 1px solid rgba(37, 99, 235, 0.24);
       max-width: 80rem;
       margin: 0 auto;
+      @include mobile_md {
+        padding: 5rem 2rem;
+      }
       .text {
         max-width: 47rem;
         margin: 0 auto;
@@ -979,9 +1072,8 @@
           margin-bottom: 0;
           margin-top: 20px;
           color: rgba(255, 255, 255, 0.74);
-          
         }
-        h5{
+        h5 {
           font-style: italic;
           line-height: 1.5;
         }
@@ -990,17 +1082,37 @@
   }
   .custom-arrow {
     top: 48%;
+    @include ipad_sm {
+      top: 107%;
+    }
   }
   .next-arrow {
-    right: 15rem;
+    right: 11rem;
+    @include ipad_b {
+      right: 0;
+    }
+    @include ipad_sm {
+      right: 43%;
+    }
+    @include mobile_md {
+      right: 35%;
+    }
   }
   .prev-arrow {
-    left: 15rem;
+    left: 11rem;
+    @include ipad_b {
+      left: 0;
+    }
+    @include ipad_sm {
+      left: 43%;
+    }
+    @include mobile_md {
+      left: 35%;
+    }
   }
 }
 // ==== sec_win
 .sec_win {
-  padding-top: 10rem;
   .cmn_heading {
     text-align: center;
     margin-bottom: 20px;
@@ -1015,7 +1127,16 @@
     flex-wrap: wrap;
     .cols {
       width: calc(100% / 4);
+      @include ipad_sm {
+        width: 50%;
+      }
+      @include mobile_md {
+        width: 100%;
+      }
       padding: 10px 47px;
+      @include ipad_b {
+        padding: 10px 20px;
+      }
       .head {
         width: fit-content;
         position: relative;
@@ -1023,18 +1144,16 @@
         &::before {
           @include pos($t: 57px);
           content: "";
-     
 
-    width: 35%;
-    height: 1.6px;
-    background: #2563eb;
+          width: 35%;
+          height: 1.6px;
+          background: #2563eb;
         }
         h2 {
           font-size: 3.5rem;
           strong {
             color: $white;
-  font-family: "Italic";
-
+            font-family: "Italic";
           }
         }
       }
@@ -1051,15 +1170,18 @@
 .sec_strategy {
   padding-bottom: 0;
   .cmn_heading {
-    width: 61%;
+    max-width: 75rem;
   }
   .sec_content {
-    width: 61%;
+    max-width: 75rem;
     margin-bottom: 15px;
   }
   .col2 {
     display: flex;
     margin-top: 25px;
+    @include mobile_md {
+      flex-wrap: wrap;
+    }
     .tabs {
       align-self: baseline;
       padding-left: 0;
@@ -1067,36 +1189,64 @@
       background: $sec_bg;
       padding: 2rem;
       @include radius(10px);
+      @include ipad_b {
+        width: 27%;
+      }
+      @include ipad_sm {
+        width: 35%;
+      }
+      @include mobile_md {
+        width: 100%;
+      }
       li {
         &.active {
-          border: 1px solid $primary-color;
           a {
             color: $primary-color;
+            border: 1px solid $primary-color;
           }
         }
         &:last-child {
           margin-bottom: 0;
         }
         list-style: none;
-        border: 1px solid #4b4b4b;
-        padding: 11px 12px;
-        text-align: center;
-        position: relative;
-        min-width: 136px;
-        margin-bottom: 10px;
-        @include radius(50px);
+        width: 100%;
+        margin-bottom: 27px;
         a {
           color: $white;
           font-size: 16px;
+          border: 1px solid #4b4b4b;
+          padding: 11px 12px;
+          text-align: center;
+          position: relative;
+          min-width: 136px;
+          width: 100%;
+          @include radius(50px);
         }
       }
     }
     .grids {
       width: 79%;
       padding-left: 25px;
+      @include ipad_sm {
+        padding-left: 10px;
+        width: 72%;
+      }
+      @include mobile_b {
+        width: 68%;
+      }
+      @include mobile_md {
+        width: 100%;
+        padding-left: 0;
+      }
       .flex {
         .cols {
           width: calc(100% / 2);
+          @include ipad_sm {
+            width: 100%;
+          }
+          @include mobile_md {
+            padding: 10px 0;
+          }
           padding: 10px;
           .inner {
             background: $sec_bg;
@@ -1129,19 +1279,32 @@
 .sec_capability {
   .cmn_heading {
     text-align: center;
-    width: 60%;
+    max-width: 71rem;
     margin: 0 auto;
     margin-bottom: 15px;
   }
   .image_o {
     padding-bottom: 40rem;
+    @include mobile_md {
+      padding-bottom: 22rem;
+    }
     img {
       object-fit: contain;
+      @include mobile_md {
+        object-fit: cover;
+      }
     }
   }
   .flex {
     .cols {
       width: calc(100% / 3);
+      @include mobile_b {
+        width: calc(100% / 2);
+      }
+      @include mobile_md {
+        width: 100%;
+        padding: 20px 0;
+      }
       padding: 20px 20px;
       .image {
         width: 34px;
@@ -1152,7 +1315,10 @@
 }
 // === sec_smallBanner
 .sec_smallBanner {
-  padding-top: 16rem;
+  padding-top: 13rem;
+  @include mobile_md {
+    padding-top: 9rem;
+  }
   position: relative;
   &::before {
     @include pos($t: unset);
@@ -1164,7 +1330,7 @@
     background-size: cover;
   }
   .inside {
-    width: 56%;
+    max-width: 65rem;
     margin: 0 auto;
     text-align: center;
     ul {
@@ -1172,9 +1338,15 @@
       padding-left: 0;
       display: flex;
       justify-content: center;
+      @include mobile_md {
+        flex-wrap: wrap;
+      }
       gap: 15px;
       li {
         list-style: none;
+        @include mobile_md {
+          width: 100%;
+        }
       }
     }
   }
@@ -1183,15 +1355,29 @@
 .sec_featured {
   padding-bottom: 0;
   .cmn_heading {
-    width: 60%;
+    max-width: 70rem;
     margin-bottom: 40px;
   }
   .flex {
+    justify-content: center;
     .cols {
       width: calc(100% / 3);
+      @include ipad_sm {
+        width: 50%;
+      }
+      @include mobile_md {
+        width: 100%;
+        padding: 10px 0;
+      }
       padding: 5px;
       &:first-child {
         width: 66.666%;
+        @include ipad_sm {
+          width: 50%;
+        }
+        @include mobile_md {
+          width: 100%;
+        }
       }
       .inner {
         background: $sec_bg;
@@ -1223,8 +1409,14 @@
         .image_o {
           margin-top: 15px;
           padding-bottom: 27rem;
+          @include mobile_md {
+            padding-bottom: 22rem;
+          }
           img {
             object-fit: contain;
+            @include mobile_md {
+              object-fit: cover;
+            }
           }
         }
       }
@@ -1239,13 +1431,24 @@
     padding: 5rem;
     border: 1px solid rgba(37, 99, 235, 0.37);
     @include radius(20px);
+    @include mobile_md {
+      padding: 3rem 2rem;
+    }
     h2 {
       font-family: "SemiBold";
     }
     .flex {
       margin-top: 20px;
+      justify-content: center;
       .cols {
         width: calc(100% / 3);
+        @include ipad_sm {
+          width: calc(100% / 2);
+        }
+        @include mobile_md {
+          width: 100%;
+          padding: 10px 0;
+        }
         padding: 5px;
         .inner {
           background: $black;
@@ -1276,18 +1479,24 @@
 }
 // ==== case_detail
 .case_detail {
-  padding-top: 16rem;
+  padding-top: 13rem;
+  @include mobile_md {
+    padding-top: 9rem;
+  }
   padding-bottom: 0;
   .top_area {
-    width: 63%;
+    max-width: 87rem;
     margin: 0 auto;
     text-align: center;
-    p{
+    p {
       font-size: 24px;
     }
     .image_o {
       padding-bottom: 30rem;
       margin: 40px 0;
+      @include mobile_md {
+        padding-bottom: 13rem;
+      }
       img {
         object-fit: contain;
       }
@@ -1297,10 +1506,18 @@
     .inner_card {
       background: $sec_bg;
       padding: 4rem;
+      @include mobile_md {
+        padding: 2rem;
+      }
       border: 1px solid rgba(37, 99, 235, 0.35);
       @include radius(20px);
     }
     .col1 {
+      @include mobile_md {
+        width: 100%;
+        padding-right: 0;
+        padding-bottom: 25px;
+      }
       width: 65%;
       padding-right: 15px;
       .block {
@@ -1311,6 +1528,9 @@
       }
     }
     .col2 {
+      @include mobile_md {
+        width: 100%;
+      }
       width: 35%;
       .tab_content {
         h5 {
@@ -1371,9 +1591,8 @@
   }
 }
 
-
-.services_banner{
-  .sec_heading{
+.services_banner {
+  .sec_heading {
     max-width: 90rem;
     margin: 0 auto;
   }

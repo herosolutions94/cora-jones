@@ -1,7 +1,20 @@
+@include mobile_sm {
+  .btn_blk {
+    .site_btn {
+      width: 100%;
+    }
+  }
+}
 #smallbanner {
-  padding-top: 16rem;
+  padding-top: 13rem;
   padding-bottom: 10rem;
 
+  @include mobile_md {
+    padding-top: 9rem;
+  }
+  @include mobile_md {
+    padding-bottom: 4rem;
+  }
   .sec_heading {
     h4 {
       margin-bottom: 20px;
@@ -14,6 +27,12 @@
   border: 1px solid #2563eb5c;
   border-radius: 21px;
   padding: 7rem;
+  @include ipad_sm {
+    padding: 5rem;
+  }
+  @include mobile_md {
+    padding: 3rem;
+  }
 
   &.sm_outer {
     padding: 3rem;
@@ -24,23 +43,45 @@
   padding: 0;
 
   .col {
+    @include ipad_b {
     width: 32%;
 
     .image {
       height: 100%;
       width: 100%;
+      flex: unset;
+      padding-bottom: 20px;
+    }
+    width: 32%;
+    .image_o {
+      padding-bottom: 166%;
+      @include ipad_b {
+        padding-bottom: 115%;
+      }
+      @include ipad_sm {
+        padding-bottom: 83%;
+      }
+      @include mobile_md {
+        padding-bottom: 125%;
+      }
       @include radius(21px);
       overflow: hidden;
 
       img {
-        @include object(cover);
-        // @include pos;
+        object-fit: cover;
+        @include ipad_sm {
+          object-position: top;
+        }
       }
     }
   }
 
   .colr {
     width: 67%;
+    @include ipad_b {
+      width: 100%;
+      padding-left: 0;
+    }
     padding-left: 20px;
 
     p {
@@ -57,6 +98,9 @@
         font-family: "Italic";
         line-height: 45px;
         margin-top: 3rem;
+        @include mobile_md {
+          font-size: 28px;
+        }
       }
 
       .btn_blk {
@@ -72,9 +116,17 @@
       justify-content: center;
 
       .cols {
+        @include ipad_b {
+          width: calc(100% / 2);
+        }
+        @include mobile_b {
+          width: 100%;
+        }
         .inner {
           background-color: #020202;
-
+          @include mobile_md {
+            padding: 28px;
+          }
           h6 {
             font-size: 20px;
           }
@@ -89,7 +141,6 @@
 
   .sec_heading {
     margin-bottom: 40px;
-
     p {
       font-size: 2rem;
       line-height: 3rem;
@@ -102,6 +153,10 @@
     li {
       display: flex;
       gap: 60px;
+      @include mobile_md {
+        flex-wrap: wrap;
+        gap: unset;
+      }
 
       &:not(:last-child) {
         padding-bottom: 30px;
@@ -113,11 +168,19 @@
         margin-bottom: 0;
         width: 25%;
         font-size: 22px;
+
+        @include mobile_md {
+          width: 100%;
+          padding-bottom: 8px;
+        }
       }
 
       .text {
         flex: 1;
-
+        @include mobile_md {
+          width: 100%;
+          flex: unset;
+        }
         h4 {
           margin-bottom: 2rem;
 
@@ -142,6 +205,15 @@
   .outer_blk {
     display: flex;
     gap: 70px;
+    @include mobile_md {
+      flex-wrap: wrap;
+      gap: unset;
+      .inner {
+        &:first-child {
+          padding-bottom: 15px;
+        }
+      }
+    }
   }
 }
 
@@ -151,7 +223,15 @@
 
   .outer_blk {
     display: flex;
-
+    @include ipad_sm {
+      flex-wrap: wrap;
+    }
+    .heading {
+      width: 40%;
+      @include ipad_sm {
+        width: 100%;
+        padding-bottom: 20px;
+      }
     .heading {
       width: 40%;
 
@@ -166,9 +246,20 @@
 
     .flex {
       flex: 1;
-
+      @include ipad_sm {
+        flex: unset;
+        width: 100%;
+        justify-content: center;
+      }
       .cols {
         width: calc(100% / 3);
+        @include mobile_md {
+          width: calc(100% / 2);
+          padding: 15px 0;
+        }
+        @include mobile_xs {
+          width: 100%;
+        }
         padding: 0 20px;
 
         h4 {
@@ -205,7 +296,9 @@
   .inner_block {
     border: 1px solid #64748b7d;
     margin-bottom: 70px;
-
+    @include mobile_md {
+      margin-bottom: 20px;
+    }
     &:nth-child(even) {
       flex-direction: row-reverse;
 
@@ -213,17 +306,28 @@
       .col1 {
         padding-right: 0;
         padding-left: 40px;
+        @include ipad_sm {
+          padding-left: 0;
+        }
       }
     }
 
     &:nth-child(odd) {
       flex-direction: unset;
       margin-bottom: 70px;
-
+      @include mobile_md {
+        margin-bottom: 20px;
+      }
       .col1 {
         padding-left: 0;
         padding-right: 40px;
+        @include ipad_sm {
+          padding-right: 0;
+        }
       }
+    }
+    &:last-child {
+      margin-bottom: 0;
     }
   }
 }
@@ -231,7 +335,6 @@
 #optionalads {
   padding: 0;
   padding-top: 5rem;
-
   .sec_heading {
     margin-bottom: 30px;
   }
@@ -242,7 +345,9 @@
     .cols {
       width: calc(100% / 2);
       padding: 10px;
-
+      @include mobile_md {
+        width: 100%;
+      }
       .inner {
         background-color: #1a1a1a;
         border-radius: 14px;
@@ -261,13 +366,18 @@
   .two_cols {
     .cols {
       align-self: center;
-
       &:first-child {
         width: 60%;
+        @include mobile_b {
+          width: 100%;
+          padding-bottom: 15px;
+        }
       }
-
       &:last-child {
         width: 40%;
+        @include mobile_b {
+          width: 100%;
+        }
       }
 
       .image {
@@ -297,18 +407,26 @@
 
 #compliance {
   .sec_heading {
-    width: 60%;
+    max-width: 60rem;
     margin-bottom: 40px;
   }
 
   .cols {
     width: calc(100% / 4);
+    @include ipad_b {
+      width: calc(100% / 2);
+    }
+    @include mobile_md {
+      width: 100%;
+      padding: 10px 0;
+    }
     padding: 10px;
 
     .inner {
       background-color: #020202;
       border: 1px solid #2563eb45;
-      padding: 20px 36px;
+      height: 100%;
+      padding: 20px 28px;
       border-radius: 14px;
 
       .icon {
@@ -334,6 +452,13 @@
   .flex {
     .cols {
       width: calc(100% / 4);
+      @include ipad_sm {
+        width: calc(100% / 2);
+      }
+      @include mobile_md {
+        width: 100%;
+        padding: 20px 0px;
+      }
       padding: 0 10px;
 
       h4 {
@@ -364,6 +489,8 @@
 }
 
 #results {
+  padding-bottom: 0;
+  margin-bottom: 7rem;
   .cmn_heading {
     margin-bottom: 30px;
   }
@@ -382,10 +509,28 @@
 
   .next-arrow {
     right: 45.5%;
+    @include ipad_b {
+      right: 44%;
+    }
+    @include ipad_sm {
+      right: 42%;
+    }
+    @include mobile_md {
+      right: 32%;
+    }
   }
 
   .prev-arrow {
     left: 45.5%;
+    @include ipad_b {
+      left: 44%;
+    }
+    @include ipad_sm {
+      left: 42%;
+    }
+    @include mobile_md {
+      left: 32%;
+    }
   }
 
   .item {
@@ -413,24 +558,57 @@
 }
 
 #approach {
+  .flex1 {
+    @include mobile_b {
+      flex-direction: column-reverse;
+    }
+  }
+  .colL {
+    width: 60%;
+    @include mobile_b {
+      width: 100%;
+    }
   padding-top: 5rem;
 
   .colL {
     width: 60%;
-
     .cols {
       width: calc(100% / 2);
+      @include mobile_md {
+        width: 100%;
+        padding: 10px 0;
+      }
       padding: 10px;
 
       &:nth-child(1) {
-        margin-top: 37px;
+        transform: translateY(39px);
+        @include mobile_b {
+          transform: unset;
+          -webkit-transform: unset;
+          -moz-transform: unset;
+          -ms-transform: unset;
+          -o-transform: unset;
+        }
       }
+      &:nth-child(3) {
+        transform: translateY(39px);
+        @include mobile_b {
+          transform: unset;
+          -webkit-transform: unset;
+          -moz-transform: unset;
+          -ms-transform: unset;
+          -o-transform: unset;
+        }
 
       &:nth-child(4) {
         margin-top: -60px;
       }
 
       .outer_blk {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         h4 {
           margin-bottom: 15px;
           font-size: 25px;
@@ -445,6 +623,11 @@
 
   .colr {
     width: 40%;
+    @include mobile_b {
+      width: 100%;
+      padding-left: 0;
+      padding-bottom: 15px;
+    }
     align-self: center;
     padding-left: 40px;
 
@@ -456,14 +639,49 @@
       margin-top: 20px;
     }
   }
+  .site_btn {
+    @include mobile_md {
+      width: 100%;
+    }
+  }
 }
 
 #projects {
+  .inner_block {
+    &:last-child {
+      margin-bottom: 0;
+    }
+    @include ipad_sm {
+      flex-direction: unset;
+    }
+    &.project_blk_outer {
+      @include mobile_md {
+        padding: 2rem;
+      }
+    }
+  }
+  .single_block {
+    .col1 {
+      @include ipad_sm {
+        padding-left: 0;
+      }
+    }
+    // .col2 {
+    //   .image {
+    //     @include mobile_md {
+    //       padding-bottom: 37rem;
+    //     }
+    //   }
+    // }
+  }
   .two_cols {
     margin: 0 -10px;
 
     .cols {
       padding: 10px;
+      @include mobile_md {
+        width: 100%;
+      }
     }
   }
 
@@ -481,7 +699,9 @@
 
   .image_o {
     padding-bottom: 37rem;
-
+    @include mobile_md {
+      padding-bottom: 25rem;
+    }
     img {
       object-fit: contain;
     }
@@ -495,10 +715,20 @@
 
   .flex {
     margin: 0 -60px;
+    @include mobile_md {
+      margin: 0;
+    }
   }
 
   .cols {
     width: calc(100% / 3);
+    @include ipad_sm {
+      width: calc(100% / 2);
+    }
+    @include mobile_md {
+      width: 100%;
+      padding: 10px;
+    }
     padding: 10px 60px;
 
     .icon {
@@ -611,7 +841,6 @@
 
 #content {
   padding: 0;
-
   h4 {
     margin-top: 30px;
   }
@@ -639,6 +868,12 @@
     padding-right: 0;
     padding-left: 40px;
   }
+
+}
+
+.trans_prj {
+  padding: 6rem 0 14rem 0;
+}
 }
 
 .trans_prj {

@@ -21,7 +21,7 @@ export default function About() {
           <div className="contain">
             <div className="flex two_cols">
               <div className="cols col">
-                <div className="image">
+                <div className="image_o">
                   <img src="images/about.png" />
                 </div>
               </div>
@@ -56,64 +56,66 @@ export default function About() {
         </section>
 
         <section className="sec_critical groundup">
-          <div className="contain outer_blk">
-            <div className="center_heading cmn_heading groundup_heading">
-              <div className="title">
-                <h5>Ground up</h5>
+          <div className="contain">
+            <div className="outer_blk">
+              <div className="center_heading cmn_heading groundup_heading">
+                <div className="title">
+                  <h5>Ground up</h5>
+                </div>
+                <h2>
+                  Building scalable, secure, and compliant AI systems from the
+                  ground up.
+                </h2>
               </div>
-              <h2>
-                Building scalable, secure, and compliant AI systems from the
-                ground up.
-              </h2>
-            </div>
-            <div className="flex">
-              <div className="cols">
-                <div className="inner">
-                  <div className="image">
-                    <img src="images/g1.png" alt="" />
-                  </div>
-                  <div className="content">
-                    <h6>AI Infrastructure & Security</h6>
+              <div className="flex">
+                <div className="cols">
+                  <div className="inner">
+                    <div className="image">
+                      <img src="images/g1.png" alt="" />
+                    </div>
+                    <div className="content">
+                      <h6>AI Infrastructure & Security</h6>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div className="cols">
-                <div className="inner">
-                  <div className="image">
-                    <img src="images/g2.png" alt="" />
-                  </div>
-                  <div className="content">
-                    <h6>Cloud-Native ML Systems</h6>
-                  </div>
-                </div>
-              </div>
-              <div className="cols">
-                <div className="inner">
-                  <div className="image">
-                    <img src="images/g3.png" alt="" />
-                  </div>
-                  <div className="content">
-                    <h6>LLM Governance & Compliance</h6>
+                <div className="cols">
+                  <div className="inner">
+                    <div className="image">
+                      <img src="images/g2.png" alt="" />
+                    </div>
+                    <div className="content">
+                      <h6>Cloud-Native ML Systems</h6>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div className="cols">
-                <div className="inner">
-                  <div className="image">
-                    <img src="images/g4.png" alt="" />
-                  </div>
-                  <div className="content">
-                    <h6>Scalable MLOps Pipelines</h6>
+                <div className="cols">
+                  <div className="inner">
+                    <div className="image">
+                      <img src="images/g3.png" alt="" />
+                    </div>
+                    <div className="content">
+                      <h6>LLM Governance & Compliance</h6>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div className="cols">
-                <div className="inner">
-                  <div className="image">
-                    <img src="images/g5.png" alt="" />
+                <div className="cols">
+                  <div className="inner">
+                    <div className="image">
+                      <img src="images/g4.png" alt="" />
+                    </div>
+                    <div className="content">
+                      <h6>Scalable MLOps Pipelines</h6>
+                    </div>
                   </div>
-                  <div className="content">
-                    <h6>Executive & Team Enablement</h6>
+                </div>
+                <div className="cols">
+                  <div className="inner">
+                    <div className="image">
+                      <img src="images/g5.png" alt="" />
+                    </div>
+                    <div className="content">
+                      <h6>Executive & Team Enablement</h6>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -121,68 +123,71 @@ export default function About() {
           </div>
         </section>
         <section id="history">
-          <div className="contain outer_blk">
-            <div className="sec_heading">
-              <h2>Our History</h2>
-              <p>
-                I believe the best architecture disappears — but leaves behind
-                systems that scale, adapt, and deliver results with integrity.
-                My approach blends technical depth with cross-functional
-                clarity, enabling faster onboarding, measurable outcomes, and
-                audit-readiness from day one.
-              </p>
+          <div className="contain">
+            <div className="outer_blk">
+              <div className="sec_heading">
+                <h2>Our History</h2>
+                <p>
+                  I believe the best architecture disappears — but leaves behind
+                  systems that scale, adapt, and deliver results with integrity.
+                  My approach blends technical depth with cross-functional
+                  clarity, enabling faster onboarding, measurable outcomes, and
+                  audit-readiness from day one.
+                </p>
+              </div>
+              <ul>
+                <li>
+                  <h2>2021 – Present</h2>
+                  <div className="text">
+                    <h4>
+                      Fractional AI Advisor <span> (IRS, GSA, Fintech)</span>
+                    </h4>
+                    <p>
+                      As a fractional executive, I lead high-impact AI
+                      initiatives for federal and financial sector clients,
+                      including architecting secure LLM platforms, enabling
+                      cloud-native ML pipelines, and building governance systems
+                      for compliant AI deployment. I specialize in accelerating
+                      time-to-value while ensuring security, traceability, and
+                      regulatory alignment.
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <h2>2018 – 2021</h2>
+                  <div className="text">
+                    <h4>
+                      Lead Cloud Architect <span>(Federal Tech Firm)</span>
+                    </h4>
+                    <p>
+                      Oversaw enterprise cloud transformation for large-scale
+                      public-sector systems, focusing on secure infrastructure,
+                      container orchestration (Kubernetes/EKS), and automated
+                      CI/CD. Championed modernization efforts that reduced
+                      operational overhead and enabled AI integration across
+                      multiple government agencies.
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <h2>2014 – 2018</h2>
+                  <div className="text">
+                    <h4>
+                      AI Research & Infrastructure{" "}
+                      <span>(Healthcare + Public Sector)</span>
+                    </h4>
+                    <p>
+                      Built foundational AI infrastructure to support NLP,
+                      predictive modeling, and data enrichment for healthcare
+                      and federal programs. Designed secure data pipelines and
+                      helped teams adopt machine learning at scale—delivering
+                      measurable improvements in operational efficiency and
+                      compliance readiness.
+                    </p>
+                  </div>
+                </li>
+              </ul>
             </div>
-            <ul>
-              <li>
-                <h2>2021 – Present</h2>
-                <div className="text">
-                  <h4>
-                    Fractional AI Advisor <span> (IRS, GSA, Fintech)</span>
-                  </h4>
-                  <p>
-                    As a fractional executive, I lead high-impact AI initiatives
-                    for federal and financial sector clients, including
-                    architecting secure LLM platforms, enabling cloud-native ML
-                    pipelines, and building governance systems for compliant AI
-                    deployment. I specialize in accelerating time-to-value while
-                    ensuring security, traceability, and regulatory alignment.
-                  </p>
-                </div>
-              </li>
-              <li>
-                <h2>2018 – 2021</h2>
-                <div className="text">
-                  <h4>
-                    Lead Cloud Architect <span>(Federal Tech Firm)</span>
-                  </h4>
-                  <p>
-                    Oversaw enterprise cloud transformation for large-scale
-                    public-sector systems, focusing on secure infrastructure,
-                    container orchestration (Kubernetes/EKS), and automated
-                    CI/CD. Championed modernization efforts that reduced
-                    operational overhead and enabled AI integration across
-                    multiple government agencies.
-                  </p>
-                </div>
-              </li>
-              <li>
-                <h2>2014 – 2018</h2>
-                <div className="text">
-                  <h4>
-                    AI Research & Infrastructure{" "}
-                    <span>(Healthcare + Public Sector)</span>
-                  </h4>
-                  <p>
-                    Built foundational AI infrastructure to support NLP,
-                    predictive modeling, and data enrichment for healthcare and
-                    federal programs. Designed secure data pipelines and helped
-                    teams adopt machine learning at scale—delivering measurable
-                    improvements in operational efficiency and compliance
-                    readiness.
-                  </p>
-                </div>
-              </li>
-            </ul>
           </div>
         </section>
         <section id="missvision">
@@ -226,7 +231,7 @@ export default function About() {
                 </div>
               </div>
               <div className="flex">
-                 <div className="cols">
+                <div className="cols">
                   <h4>65%</h4>
                   <p>onboarding speedup</p>
                 </div>

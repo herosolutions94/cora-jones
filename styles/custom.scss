@@ -46,7 +46,7 @@ body {
   @at-root {
     section {
       position: relative;
-      padding:14rem 0;
+      padding: 14rem 0;
       @include mobile {
         padding: 4rem 0;
       }
@@ -114,7 +114,7 @@ h2,
 .h2,
 .size_2 {
   font-size: 4rem;
-  
+
   @include mobile {
     font-size: 3rem;
   }
@@ -315,8 +315,8 @@ _btn {
       //-webkit-box-shadow: $shadow;
       //box-shadow: $shadow;
       &:hover {
-        color: $white;
-        background: $primary-color;
+        color: $primary-color;
+        background: $white;
       }
       @include trans;
       @include ipad {
@@ -2801,8 +2801,6 @@ nav {
       opacity: 1;
       visibility: visible;
       pointer-events: auto;
-      
-      
     }
   }
   > .nav_neg {
@@ -2868,6 +2866,12 @@ nav {
         pointer-events: none;
         @include trans;
         overflow: hidden;
+        &.active {
+          visibility: visible;
+          opacity: 1;
+          pointer-events: auto;
+          margin-top: 0;
+        }
         @include ipad_sm {
           position: static;
           // display: none;
@@ -2911,10 +2915,10 @@ nav {
         }
       }
       &:hover > .sub {
-        visibility: visible;
-        opacity: 1;
-        margin-top: 0;
-        pointer-events: auto;
+        // visibility: visible;
+        // opacity: 1;
+        // margin-top: 0;
+        // pointer-events: auto;
       }
       &.drop > a {
         position: relative;
@@ -3017,52 +3021,52 @@ footer {
       align-items: baseline;
       margin: -1.5rem -4rem;
 
-      @include ipad{
+      @include ipad {
         margin: -1.5rem -3rem;
       }
-      @include ipad_sm{
+      @include ipad_sm {
         flex-wrap: wrap;
       }
       .col {
         flex: 1;
         padding: 1.5rem 3rem;
-        @include ipad_sm{
+        @include ipad_sm {
           flex: unset;
           width: 50%;
         }
-        @include mobile_sm{
+        @include mobile_sm {
           width: 100%;
         }
         &:nth-child(1) {
           flex: 2;
           margin-top: -56px;
-          @include ipad_sm{
+          @include ipad_sm {
             flex: unset;
             width: 50%;
           }
-          @include mobile_sm{
-          width: 100%;
-        }
+          @include mobile_sm {
+            width: 100%;
+          }
         }
         &:nth-child(2) {
           flex: 2;
-          @include ipad_sm{
+          @include ipad_sm {
             flex: unset;
             width: 50%;
           }
-          @include mobile_sm{
-          width: 100%;
-        }
+          @include mobile_sm {
+            width: 100%;
+          }
         }
         &:nth-child(4) {
           flex: 2;
-          @include ipad_sm{
+          @include ipad_sm {
             flex: unset;
             width: 50%;
           }
-          @include mobile_sm{
-          width: 100%;
-        }
+          @include mobile_sm {
+            width: 100%;
+          }
         }
       }
       h4 {
@@ -5589,4 +5593,3 @@ table {
 }
 @import "style";
 @import "m_style";
-
