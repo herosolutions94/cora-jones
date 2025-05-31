@@ -63,7 +63,8 @@
     }
     width: 32%;
     .image_o {
-      padding-bottom: 166%;
+      // padding-bottom: 166%;
+      height: 100%;
       @include ipad_b {
         padding-bottom: 115%;
       }

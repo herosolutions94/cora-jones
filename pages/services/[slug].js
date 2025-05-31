@@ -9,7 +9,7 @@ function NextArrow(props) {
   const { onClick } = props;
   return (
     <div className="custom-arrow next-arrow" onClick={onClick}>
-      <img src="/images/next.svg" alt="Next" />
+      <img src="/images/Next.svg" alt="Next" />
     </div>
   );
 }
@@ -18,7 +18,7 @@ function PrevArrow(props) {
   const { onClick } = props;
   return (
     <div className="custom-arrow prev-arrow" onClick={onClick}>
-      <img src="/images/back.svg" alt="Previous" />
+      <img src="/images/Back.svg" alt="Previous" />
     </div>
   );
 }

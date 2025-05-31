@@ -1486,6 +1486,7 @@
           border: 1px solid rgba(37, 99, 235, 0.35);
           @include radius(10px);
           height: 100%;
+          display: block;
           h5 {
             font-family: "SemiBold";
             position: relative;
@@ -1501,6 +1502,7 @@
           }
           p {
             margin-bottom: 0;
+            color: $white;
           }
         }
       }

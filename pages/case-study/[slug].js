@@ -1,4 +1,5 @@
 import Cta from "@/components/cta";
+import Link from "next/link";
 import React from "react";
 
 const Detail = () => {
@@ -151,31 +152,31 @@ const Detail = () => {
             </div>
             <div className="flex flexRow">
               <div className="cols">
-                <div className="inner">
+                <Link href="/case-study/detail" className="inner">
                   <h5>Resource Access</h5>
                   <p>
                     Visitors can access a wide range of resources, including
                     ebooks, whitepapers, reports.
                   </p>
-                </div>
+                </Link>
               </div>
               <div className="cols">
-                <div className="inner">
+                <Link href="/case-study/detail" className="inner">
                   <h5>Community Forum</h5>
                   <p>
                     Join our active community forum to discuss industry trends
                     and collaborate with peers.
                   </p>
-                </div>
+                </Link>
               </div>
               <div className="cols">
-                <div className="inner">
+                <Link href="/case-study/detail" className="inner">
                   <h5>Tech Events</h5>
                   <p>
                     Stay updated on upcoming tech events, webinars and
                     conferences to enhance your knowledge.
                   </p>
-                </div>
+                </Link>
               </div>
             </div>
           </div>
