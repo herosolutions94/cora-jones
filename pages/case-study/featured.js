@@ -33,7 +33,7 @@ const Featured = () => {
                   </p>
                 </div>
                 <div className="link">
-                  <Link href="">
+                  <Link href="/case-study/detail">
                     Learn More<i className="fas fa-arrow-right"></i>
                   </Link>
                 </div>
@@ -48,7 +48,7 @@ const Featured = () => {
                   <div className="icons">
                     <img src="images/f-2.png" alt="" />
                   </div>
-                  <Link href="">
+                  <Link href="/case-study/detail">
                     {" "}
                     <h5>Enhancing Fraud Detection</h5>
                   </Link>
@@ -60,7 +60,7 @@ const Featured = () => {
                   </p>
                 </div>
                 <div className="link">
-                  <Link href="">
+                  <Link href="/case-study/detail">
                     Learn More<i className="fas fa-arrow-right"></i>
                   </Link>
                 </div>
@@ -75,7 +75,7 @@ const Featured = () => {
                   <div className="icons">
                     <img src="images/f-3.png" alt="" />
                   </div>
-                  <Link href="">
+                  <Link href="/case-study/detail">
                     <h5>CI/CD Infrastructure Revamp</h5>
                   </Link>
                 </div>
@@ -86,7 +86,7 @@ const Featured = () => {
                   </p>
                 </div>
                 <div className="link">
-                  <Link href="">
+                  <Link href="/case-study/detail">
                     Learn More<i className="fas fa-arrow-right"></i>
                   </Link>
                 </div>
@@ -101,7 +101,7 @@ const Featured = () => {
                   <div className="icons">
                     <img src="images/f-4.png" alt="" />
                   </div>
-                  <Link href="">
+                  <Link href="/case-study/detail">
                     {" "}
                     <h5>Intelligent Data Routing</h5>
                   </Link>
@@ -113,7 +113,7 @@ const Featured = () => {
                   </p>
                 </div>
                 <div className="link">
-                  <Link href="">
+                  <Link href="/case-study/detail">
                     Learn More<i className="fas fa-arrow-right"></i>
                   </Link>
                 </div>
@@ -128,7 +128,7 @@ const Featured = () => {
                   <div className="icons">
                     <img src="images/f-5.png" alt="" />
                   </div>
-                  <Link href="">
+                  <Link href="/case-study/detail">
                     <h5>AI Service Automation</h5>
                   </Link>
                 </div>
@@ -139,7 +139,7 @@ const Featured = () => {
                   </p>
                 </div>
                 <div className="link">
-                  <Link href="">
+                  <Link href="/case-study/detail">
                     Learn More<i className="fas fa-arrow-right"></i>
                   </Link>
                 </div>
