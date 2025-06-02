@@ -133,6 +133,10 @@
         @include mobile_sm {
           flex-direction: column;
           align-items: unset;
+          background-color: #1a1a1a;
+          padding: 1rem;
+          @include radius(10px);
+          height: 100%;
         }
         .percentage {
           width: 59%;
@@ -179,8 +183,9 @@
             background: #ffffff5c;
             @include mobile_sm {
               height: 1px;
-              width: 77%;
+              width: 10%;
               top: -10px;
+              background-color: $primary-color;
             }
           }
         }
@@ -276,6 +281,9 @@
           h6 {
             margin-bottom: 0;
             font-size: 25px;
+            @include mobile{
+              font-size: 2.2rem;
+            }
             @include mobile_sm{
               font-size: 2rem;
             }
@@ -1162,6 +1170,10 @@
       }
       @include mobile_md {
         width: 100%;
+        text-align: center;
+        &:not(:last-child){
+          border-bottom: 1px solid #333;
+        }
       }
       padding: 10px 47px;
       @include ipad_b {
@@ -1171,6 +1183,9 @@
         width: fit-content;
         position: relative;
         padding-bottom: 15px;
+        @include mobile_md{
+          margin: 0 auto 15px;
+        }
         &::before {
           @include pos($t: 57px);
           content: "";
@@ -1178,6 +1193,9 @@
           width: 35%;
           height: 1.6px;
           background: #2563eb;
+          @include mobile_md{
+            margin: auto;
+          }
         }
         h2 {
           font-size: 3.5rem;
@@ -1522,6 +1540,9 @@
     text-align: center;
     p {
       font-size: 24px;
+      @include mobile_sm{
+        font-size: 2rem;
+      }
     }
     .image_o {
       padding-bottom: 30rem;
@@ -1641,5 +1662,22 @@
 .pt_lt{
   @include mobile_sm{
     padding-left: 2rem!important;
+  }
+}
+
+.hide_cell_mst{
+  @include ipad_sm{
+    display: none;
+  }
+}
+.show_cell_mst{
+  display: none;
+  margin-top: 3rem;
+  @include ipad_sm{
+    display: flex;
+    justify-content: center;
+  }
+  @include mobile_sm{
+    display: block;
   }
 }

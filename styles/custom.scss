@@ -118,6 +118,9 @@ h2,
   @include mobile {
     font-size: 3rem;
   }
+  @include mobile_sm{
+    font-size: 2.8rem;
+  }
 }
 
 h3,
@@ -2797,10 +2800,12 @@ nav {
     height: 100vh;
     align-content: center;
     top: 0;
+    display: none;
     &.active {
       opacity: 1;
       visibility: visible;
       pointer-events: auto;
+      display: flex;
     }
   }
   > .nav_neg {

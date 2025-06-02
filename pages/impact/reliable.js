@@ -5,7 +5,7 @@ const Reliable = () => {
     <>
       <section className="sec_reliable">
         <div className="contain">
-          <div className="flex">
+          <div className="flex reverse_must">
             <div className="col1">
               <div className="image_o">
                 <img src="images/rel.png" alt="" />

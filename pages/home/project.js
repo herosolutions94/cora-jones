@@ -14,7 +14,7 @@ const Project = () => {
                 <h2>Strategic Impact at Scale</h2>
               </div>
             </div>
-            <div className="cols">
+            <div className="cols hide_cell_mst">
               <div className="cta">
                 <Link href="/project" className="site_btn">
                   View All Projects
@@ -92,6 +92,14 @@ const Project = () => {
               </div>
             </div>
           </div>
+
+          <div className="cols show_cell_mst">
+              <div className="cta">
+                <Link href="/project" className="site_btn">
+                  View All Projects
+                </Link>
+              </div>
+            </div>
         </div>
       </section>
     </>

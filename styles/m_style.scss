@@ -111,6 +111,10 @@
         @include mobile_md {
           font-size: 28px;
         }
+        @include mobile_sm{
+          font-size: 2rem;
+          line-height: 30px;
+        }
       }
 
       .btn_blk {
@@ -141,6 +145,8 @@
           @include mobile_sm{
             flex-direction: column;
             gap: 2rem;
+            align-items: center;
+            text-align: center;
           }
           h6 {
             font-size: 20px;
@@ -476,8 +482,14 @@
         width: calc(100% / 2);
       }
       @include mobile_md {
-        width: 100%;
+        text-align: center;
         padding: 20px 0px;
+      }
+      @include mobile_sm{
+        width: 100%;
+        &:not(:last-child){
+          border-bottom: 1px solid #333;
+        }
       }
       padding: 0 10px;
 
@@ -497,6 +509,10 @@
           height: 2px;
           width: 20%;
           background-color: #2563eb;
+          @include mobile_md{
+            right: 0;
+            margin: auto;
+          }
         }
       }
 
@@ -587,10 +603,12 @@
 
   .colL {
     width: 60%;
+    padding-top: 5rem;
     @include mobile_b {
       width: 100%;
+      padding-top: 2rem;
     }
-    padding-top: 5rem;
+    
     .cols {
       width: calc(100% / 2);
       @include mobile_md {
@@ -761,6 +779,10 @@
     @include mobile_md {
       width: 100%;
       padding: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
     }
     padding: 10px 60px;
 
@@ -906,6 +928,9 @@
 
 .trans_prj {
   padding: 6rem 0 14rem 0;
+  @include mobile{
+    padding: 3rem 0 5rem 0;
+  }
 }
 
 
@@ -1014,5 +1039,13 @@
         color: #fff;
       }
     }
+  }
+}
+
+
+.reverse_must{
+  @include mobile_md{
+    flex-direction: column!important;
+    gap: 2rem;
   }
 }
