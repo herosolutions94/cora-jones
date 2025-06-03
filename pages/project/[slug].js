@@ -79,7 +79,7 @@ export default function Detail() {
           </div>
         </div>
       </section>
-   <section className="sec_transform sec_transformation trans_prj">
+   <section className="sec_transform sec_transformation trans_prj project_detail_tbl">
         <div className="contain">
         
           <div className="flex">

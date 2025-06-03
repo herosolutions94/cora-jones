@@ -22,20 +22,20 @@ const Form = () => {
                     love to hear from you.
                   </p>
                   <ul>
-                    <li>
+                    {/* <li>
                       <div className="icons">
                         <img src="images\location.svg" alt="" />
                       </div>
                       <div className="text">
                         <p>Remote-Friendly · Based in Charlotte, NC</p>
                       </div>
-                    </li>
+                    </li> */}
                     <li>
                       <div className="icons">
                         <img src="images\envelope.svg" alt="" />
                       </div>
                       <div className="text">
-                        <Link href="">architectingscale.com</Link>
+                        <Link href="mailto:contact@architectingscale.com">contact@architectingscale.com</Link>
                       </div>
                     </li>
                   </ul>
@@ -78,9 +78,28 @@ const Form = () => {
                   </div>
                   <div className="col-md-12">
                     <div className="txtGrp">
+                      <select id="contactMethod" name="contactMethod" className="input">
+                        <option value="">Choose Preferred Method of Contact</option>
+                        <option value="email">Email</option>
+                        <option value="phone">Phone</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div className="col-md-6">
+                    <div className="txtGrp">
                       <input
                         type="text"
                         placeholder="Work Email"
+                        className="input"
+                      />
+                    </div>
+                  </div>
+                  
+                  <div className="col-md-6">
+                    <div className="txtGrp">
+                      <input
+                        type="text"
+                        placeholder="Best Time to Reach You"
                         className="input"
                       />
                     </div>

@@ -13,21 +13,21 @@ const Footer = () => {
                 </Link>
               </div>
               <ul className="infoLst">
-                <li>
+                {/* <li>
                   <img src="/images/location.svg" alt="" />
                   <Link href="">
                     7696 Broadway, Suite CLemon Grove, CA 91945
                   </Link>
-                </li>
+                </li> */}
                 <li>
                   <img src="/images/envelope.svg" alt="" />
-                  <Link href="mailto:jetmeans@gmail.com">
-                    abcinfo@gmail.com
+                  <Link href="mailto:contact@architectingscale.com">
+                    contact@architectingscale.com
                   </Link>
                 </li>
                 <li>
                   <img src="/images/phone.svg" alt="" />
-                  <Link href="tel:(734) 219-2298">(734) 219-86796</Link>
+                  <Link href="tel:(734) 219-6796">(734) 219-6796</Link>
                 </li>
               </ul>
               <div className="flex">
@@ -96,7 +96,7 @@ const Footer = () => {
                 className=""
               >
                 <label htmlFor="email">
-                  Copy these components directly into your favorite's platforms.
+                  Subscribe to get the latest updates, tips, and exclusive offers!
                 </label>
                 <div className="txtGrp relative">
                   <input

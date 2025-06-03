@@ -1425,14 +1425,16 @@ label {
   }
   @at-root {
     select#{&} {
-      @include chevron;
-      // background-image: url(../assets/images/drop_arrow.svg)!important;
+      // @include chevron;
+      background-image: url(/images/arrow1.svg)!important;
       background-position: right 1.5rem center !important;
+      background-size: 1.5rem;
       background-repeat: no-repeat !important;
       padding-right: 3rem !important;
       -webkit-appearance: none;
       -moz-appearance: none;
       appearance: none;
+      background-color: #313131;
     }
   }
   &.error {
@@ -3022,7 +3024,7 @@ footer {
   color: #d5d4d4;
   padding-top: 7rem;
   overflow: hidden;
-  font-size: 13px;
+  // font-size: 13px;
   .contain {
     z-index: 3;
     .flexRow {
@@ -3106,12 +3108,13 @@ footer {
             height: 16px;
             margin-top: 2px;
             margin-right: 10px;
+            align-self: center;
           }
         }
       }
       form {
         > label {
-          font-size: 13px;
+          // font-size: 13px;
           margin-bottom: 7px;
           font-family: "Regular";
           font-weight: 100;
@@ -3198,7 +3201,7 @@ footer {
       list-style: none;
       a {
         color: inherit;
-        font-size: 14px;
+        // font-size: 14px;
         &:hover {
           color: $white;
         }
