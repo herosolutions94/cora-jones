@@ -11,14 +11,14 @@ const About = () => {
                 <div className="title">
                   <h5>About us</h5>
                 </div>
-                <h2>Scaling AI with Confidence, Compliance, and Clarity</h2>
+                <h2>Transforming the Future with Responsible AI</h2>
+                <p>Scaling AI with Confidence, Compliance, and Clarity.</p>
               </div>
             </div>
             <div className="cols abt_right_col">
               <div className="text">
                 <p>
-                  I’m a strategic technology leader with over 20 years of
-                  experience in AI infrastructure and cloud architecture.
+                  Cora Jones is a strategic technology leader with 20+ years of experience in AI infrastructure and enterprise cloud architecture.
                 </p>
               </div>
               <div className="cta">

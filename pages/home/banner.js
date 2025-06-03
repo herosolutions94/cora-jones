@@ -16,10 +16,7 @@ const Banner = () => {
             </div>
             <div className="sec_content">
               <p>
-                Helping teams ship AI faster, more securely, and with traceable
-                results means providing the tools, infrastructure, and strategic
-                guidance needed to move from prototype to production with
-                confidence.
+                We architect high-trust, enterprise-grade infrastructure that moves AI from prototype to production — securely and at scale.
               </p>
             </div>
             <div className="cta">

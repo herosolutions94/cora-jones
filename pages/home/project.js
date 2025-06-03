@@ -33,8 +33,7 @@ const Project = () => {
                   infrastructure for sensitive taxpayer data across agencies.
                 </li>
                 <li>
-                  <strong>What I Did:</strong> Architected a FedRAMP-compliant
-                  platform using AWS Bedrock + secure CI/CD.
+                  <strong>What I Did:</strong> Led architecture design of a multi-region AWS Bedrock infrastructure with secure audit logging, MLflow versioning, and CI/CD automation, ensuring compliance with FedRAMP.
                 </li>
               </ul>
               <div className="impact">
@@ -47,7 +46,7 @@ const Project = () => {
               </div>
               <div className="cta1">
                 <Link href="/project/detail" className="site_btn">
-                  View detail
+                  Let’s Build Together
                 </Link>
               </div>
             </div>
@@ -60,29 +59,27 @@ const Project = () => {
           <div className="flex inner_block">
             <div className="col1">
               <div className="sec_heading">
-                <h3>IRS – Bedrock LLM Platform</h3>
+                <h3>GSA — Semantic Enrichment Pipeline</h3>
               </div>
               <ul className="info">
                 <li>
-                  <strong>Problem:</strong> IRS needed a secure LLM
-                  infrastructure for sensitive taxpayer data across agencies.
+                  <strong>Problem:</strong> Manual metadata tagging created bottlenecks in procurement data searchability.
                 </li>
                 <li>
-                  <strong>What I Did:</strong> Architected a FedRAMP-compliant
-                  platform using AWS Bedrock + secure CI/CD.
+                  <strong>What I Did:</strong> Built a cloud-native semantic enrichment pipeline using NLP and vector search.
                 </li>
               </ul>
               <div className="impact">
                 <h6>Impact:</h6>
                 <ul className="listing">
-                  <li>60% faster onboarding</li>
-                  <li>99.9% CI/CD uptime</li>
-                  <li>FedRAMP Compliant</li>
+                  <li>$1.5M saved in manual labor</li>
+                  <li>80% faster data retrieval</li>
+                  <li>“Audit Ready” pipeline with traceability</li>
                 </ul>
               </div>
               <div className="cta1">
                 <Link href="/project/detail" className="site_btn">
-                  View detail
+                  See How It Works
                 </Link>
               </div>
             </div>
