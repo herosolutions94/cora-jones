@@ -15,7 +15,7 @@ const Features = ({ className = "" }) => {
                     </p>
                   </div>
                   <div className="content">
-                    <p>Faster LLM onboarding</p>
+                    <p>Onboarding Speed</p>
                   </div>
                 </div>
               </div>
@@ -27,7 +27,7 @@ const Features = ({ className = "" }) => {
                     </p>
                   </div>
                   <div className="content">
-                    <p>Fraud prevented</p>
+                    <p>Risk Mitigation</p>
                   </div>
                 </div>
               </div>
@@ -39,7 +39,7 @@ const Features = ({ className = "" }) => {
                     </p>
                   </div>
                   <div className="content">
-                    <p>CI/CD uptime delivered</p>
+                    <p>Infrastructure Reliability</p>
                   </div>
                 </div>
               </div>

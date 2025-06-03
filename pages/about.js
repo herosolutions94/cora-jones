@@ -46,7 +46,7 @@ export default function About() {
                   </div>
                   <div className="btn_blk">
                     <Link href="/contact" className="site_btn">
-                      Contact Us
+                      Let’s Connect
                     </Link>
                   </div>
                 </div>
@@ -226,7 +226,7 @@ export default function About() {
                 </h2>
                 <div className="btn_blk">
                   <Link href="/contact" className="site_btn">
-                    Contact Us
+                    Let’s Connect
                   </Link>
                 </div>
               </div>

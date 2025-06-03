@@ -42,25 +42,19 @@ export default function Projects() {
                       </Link>
                     </div>
                     <div className="sec_heading">
-                      <h3>AI Infrastructure Strategy</h3>
+                      <h3>Bedrock LLM Platform</h3>
                     </div>
                     <p>
-                      We help organizations design scalable, resilient AI
-                      infrastructure—from data pipelines to deployment. Whether
-                      starting from scratch or modernizing legacy systems, our
-                      strategy is rooted in compliance, performance, and
-                      adaptability.
+                     Led a multi-year migration from on-prem to hybrid-cloud architecture, improving model training efficiency by 45%.
                     </p>
 
                     <div className="impact">
-                      <h6>What’s included:</h6>
                       <ul className="listing">
-                        <li>Infrastructure roadmaps (cloud-native & hybrid)</li>
+                        <li>60% faster LLM onboarding</li>
                         <li>
-                          Security-first architecture (FedRAMP, HIPAA, SOC2)
+                          Audit-Ready Pipeline
                         </li>
-                        <li>MLOps & AI lifecycle integration</li>
-                        <li>LLM enablement & edge optimization</li>
+                        <li>Government-grade security</li>
                       </ul>
                     </div>
                     <div className="cta1">
@@ -83,25 +77,17 @@ export default function Projects() {
                       </Link>
                     </div>
                     <div className="sec_heading">
-                      <h3>AI Infrastructure Strategy</h3>
+                      <h3>Semantic Enrichment Pipeline</h3>
                     </div>
                     <p>
-                      We help organizations design scalable, resilient AI
-                      infrastructure—from data pipelines to deployment. Whether
-                      starting from scratch or modernizing legacy systems, our
-                      strategy is rooted in compliance, performance, and
-                      adaptability.
+                      Developed a FedRAMP-compliant AI pipeline for secure data classification across 5+ agencies.
                     </p>
 
                     <div className="impact">
-                      <h6>What’s included:</h6>
                       <ul className="listing">
-                        <li>Infrastructure roadmaps (cloud-native & hybrid)</li>
-                        <li>
-                          Security-first architecture (FedRAMP, HIPAA, SOC2)
-                        </li>
-                        <li>MLOps & AI lifecycle integration</li>
-                        <li>LLM enablement & edge optimization</li>
+                        <li>I3x faster data classification</li>
+                        <li>80% search accuracy improvement</li>
+                        <li>Compliant LLM integration</li>
                       </ul>
                     </div>
                     <div className="cta1">
@@ -126,23 +112,17 @@ export default function Projects() {
                   </Link>
                 </div>
                 <div className="sec_heading">
-                  <h3>AI Infrastructure Strategy</h3>
+                  <h3>AI-Driven Fraud Detection</h3>
                 </div>
                 <p>
-                  We help organizations design scalable, resilient AI
-                  infrastructure—from data pipelines to deployment. Whether
-                  starting from scratch or modernizing legacy systems, our
-                  strategy is rooted in compliance, performance, and
-                  adaptability.
+                  Enabled LLM-based document parsing for 1.2M+ customer forms monthly, reducing manual review time by 60%.
                 </p>
 
                 <div className="impact">
-                  <h6>What’s included:</h6>
                   <ul className="listing">
-                    <li>Infrastructure roadmaps (cloud-native & hybrid)</li>
-                    <li>Security-first architecture (FedRAMP, HIPAA, SOC2)</li>
-                    <li>MLOps & AI lifecycle integration</li>
-                    <li>LLM enablement & edge optimization</li>
+                    <li>$50M+ fraud prevented</li>
+                    <li>99.9% pipeline uptime</li>
+                    <li>50+ MLOps workflows deployed</li>
                   </ul>
                 </div>
                 <div className="cta1">
@@ -255,8 +235,8 @@ export default function Projects() {
                 <div className="text">
                   <p>
                     We utilize powerful tools like
-                    <a href="#">AWS Bedrock</a> and
-                    <a href="#">Amazon SageMaker</a> to deploy and scale
+                    <a href="#"> AWS Bedrock</a> and
+                    <a href="#"> Amazon SageMaker</a> to deploy and scale
                     foundational models across secure, enterprise-ready
                     infrastructure. These platforms ensure reliable uptime,
                     model versioning, and fine-tuned performance — all with
@@ -270,7 +250,7 @@ export default function Projects() {
                 <div className="text">
                   <p>
                     Our deployments run on
-                    <a href="#">Kubernetes (EKS)</a> to achieve resilient,
+                    <a href="#"> Kubernetes (EKS)</a> to achieve resilient,
                     containerized workflows at scale. From automated scaling to
                     robust rollout strategies, EKS allows for secure and
                     efficient ML workload orchestration — whether for
@@ -284,8 +264,8 @@ export default function Projects() {
                 <div className="text">
                   <p>
                     We work with cutting-edge frameworks like
-                    <a href="#">LangChain</a> and
-                    <a href="#">HuggingFace</a> Transformers to build
+                    <a href="#"> LangChain </a> and
+                    <a href="#"> HuggingFace </a> Transformers to build
                     composable, modular LLM applications. These tools enable
                     rapid experimentation, governance, and observability —
                     turning custom language models into production-ready
@@ -300,7 +280,7 @@ export default function Projects() {
                   <p>
                     Robust CI/CD pipelines are essential to ML operations. We’ve
                     implemented end-to-end workflows using
-                    <a href="#">GitHub Actions</a>,<a href="#">CircleCI</a>, and
+                    <a href="#"> GitHub Actions </a>,<a href="#"> CircleCI </a>, and
                     infrastructure-as-code tooling. These systems ensure rapid,
                     reproducible deployments with built-in security and rollback
                     mechanisms.
