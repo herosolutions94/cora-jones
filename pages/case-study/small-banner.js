@@ -18,13 +18,8 @@ const SmallBanner = () => {
             </div>
             <ul className="cta">
               <li>
-                <Link href="/contact" className="site_btn">
-                  Get in Touch <i className="fas fa-arrow-right"></i>
-                </Link>
-              </li>
-              <li>
                 <Link href="/contact" className="site_btn white">
-                  Request a Consultation<i className="fas fa-arrow-right"></i>
+                  Request Consultation<i className="fas fa-arrow-right"></i>
                 </Link>
               </li>
             </ul>

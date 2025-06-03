@@ -845,7 +845,7 @@
   }
   .col1 {
     width: 40%;
-    padding-right: 15px;
+    padding-right: 35px;
     @include ipad_b {
       width: 100%;
       padding-right: 0;
@@ -881,6 +881,7 @@
             .icons {
               width: 30px;
               padding-right: 10px;
+              align-self: center;
             }
             p {
               margin-bottom: 0;
@@ -900,14 +901,14 @@
     }
     form {
       background: $sec_bg;
-      padding: 40px;
+      padding: 50px;
       @include mobile_md {
         padding: 26px;
       }
       @include radius(30px);
       border: 1px solid rgba(37, 99, 235, 0.28);
       .txtGrp {
-        margin-bottom: 20px;
+        margin-bottom: 30px;
       }
       button {
         border: none;
@@ -1681,3 +1682,4 @@
     display: block;
   }
 }
+

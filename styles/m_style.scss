@@ -902,7 +902,8 @@
 #content {
   padding: 0;
   h4 {
-    margin-top: 30px;
+    margin-top: 40px;
+    font-family: 'Bold';
   }
 
   .inner_card {
@@ -1052,5 +1053,33 @@
   @include mobile_md{
     flex-direction: column!important;
     gap: 2rem;
+  }
+}
+
+.project_detail_tbl{
+  .inner_card{
+    padding: 0!important;
+    overflow: hidden!important;
+    @include mobile_md{
+      overflow-x: auto!important;
+    }
+    ul{
+      @include list;
+      &:before{
+          top: 0!important;
+          height: 100%!important;
+          left: 0!important;
+        }
+      li{
+        padding: 2rem 2rem!important;
+        
+        &:last-child{
+          padding-bottom: 2rem!important;
+        }
+        &:first-child{
+          background-color: #2e2e2e !important;
+        }
+      }
+    }
   }
 }

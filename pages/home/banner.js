@@ -21,7 +21,7 @@ const Banner = () => {
             </div>
             <div className="cta">
               <Link href="/contact" className="site_btn white">
-                Get Started <i className="fas fa-arrow-right"></i>
+                Request Consultation <i className="fas fa-arrow-right"></i>
               </Link>
             </div>
             <div className="bottom">
