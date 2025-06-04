@@ -15,11 +15,7 @@ export default function Services() {
                 Secure AI
               </h4>
               <p>
-                With 20+ years of experience delivering AI platforms across
-                federal and enterprise environments, we provide hands-on
-                strategy, architecture, and advisory to teams building
-                high-impact systems. Our services are tailored to accelerate
-                development, reduce risk, and ensure audit-ready deployments.
+                With 20+ years of experience delivering AI platforms in federal and enterprise environments, we provide hands-on strategy, architecture, and advisory to teams building high-impact systems. Our services are tailored to accelerate development, reduce risk, and ensure audit-ready deployments.
               </p>
             </div>
           </div>

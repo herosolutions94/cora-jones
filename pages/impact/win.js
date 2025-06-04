@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const Win = () => {
@@ -63,6 +64,23 @@ const Win = () => {
                   <p>Achieved near-zero downtime across critical apps</p>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="sec_cta less_sec_cta">
+        <div className="contain">
+          <div className="inner">
+            <div className="cmn_heading">
+              <h2>
+                Looking to achieve these results in your own organization?
+              </h2>
+            </div>
+            
+            <div className="cta">
+              <Link href="/contact" className="site_btn">
+                Let’s talk
+              </Link>
             </div>
           </div>
         </div>

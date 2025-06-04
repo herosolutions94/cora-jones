@@ -321,7 +321,7 @@
 
   .inner_block {
     border: 1px solid #64748b7d;
-    margin-bottom: 70px;
+    margin-bottom: 90px;
     @include mobile_md {
       margin-bottom: 20px;
     }
@@ -340,7 +340,8 @@
 
     &:nth-child(odd) {
       flex-direction: unset;
-      margin-bottom: 70px;
+      margin-bottom: 90px;
+      background: rgb(57 57 57);
       @include mobile_md {
         margin-bottom: 20px;
       }
@@ -497,7 +498,7 @@
         font-family: "Italic";
         //   border-bottom: 2px solid #2563EB;
         //   padding-bottom: 10px;
-        font-size: 36px;
+        font-size: 25px;
         position: relative;
         margin-bottom: 30px;
 
@@ -516,10 +517,10 @@
         }
       }
 
-      p {
-        // text-transform: uppercase;
-        font-size: 15px;
-      }
+      // p {
+      //   text-transform: uppercase;
+      //   font-size: 15px;
+      // }
     }
   }
 }

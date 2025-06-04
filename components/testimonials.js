@@ -69,16 +69,16 @@ const Testimonials = () => {
             <div className="title">
               <h5>Success Stories Using This Service</h5>
             </div>
-            <h2>What Our Client Say About Us</h2>
+            <h2>What Our Clients Say About Us</h2>
           </div>
           <Slider {...settings}>
             <div className="item">
               <div className="inner">
                 <div className="text">
                   <h5>
-                    “Cora and her team helped us launch a compliant AI platform
+                    <span>“</span>Cora and her team helped us launch a compliant AI platform
                     for federal operations in record time — with zero downtime
-                    and full audit traceability.”
+                    and full audit traceability.<span>”</span>
                   </h5>
                   <p>— Director of Data Engineering, IRS</p>
                 </div>
@@ -88,9 +88,9 @@ const Testimonials = () => {
               <div className="inner">
                 <div className="text">
                   <h5>
-                    “Cora and her team helped us launch a compliant AI platform
+                    <span>“</span>Cora and her team helped us launch a compliant AI platform
                     for federal operations in record time — with zero downtime
-                    and full audit traceability.”
+                    and full audit traceability.<span>”</span>
                   </h5>
                   <p>— Director of Data Engineering, IRS</p>
                 </div>
@@ -100,9 +100,9 @@ const Testimonials = () => {
               <div className="inner">
                 <div className="text">
                   <h5>
-                    “Cora and her team helped us launch a compliant AI platform
+                    <span>“</span>Cora and her team helped us launch a compliant AI platform
                     for federal operations in record time — with zero downtime
-                    and full audit traceability.”
+                    and full audit traceability.<span>”</span>
                   </h5>
                   <p>— Director of Data Engineering, IRS</p>
                 </div>
