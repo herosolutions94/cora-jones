@@ -70,7 +70,7 @@ export default function Detail() {
             </ul>
           </div>
 
-          <div>
+          <div className="blk_highlight">
             <h4>Technologies Used</h4>
             <p>
               AWS Lambda, SageMaker, Kafka, Python, Terraform, CloudWatch, REST

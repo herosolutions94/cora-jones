@@ -8,7 +8,7 @@ const Results = () => {
           <div className="flex">
             <div className="col1">
               <div className="main_heading">
-                <h1>Results That Speak for Themselves</h1>
+                <h1>Quantifiable Impact Across AI, Compliance & Cloud</h1>
               </div>
               <div className="text">
                 <p>

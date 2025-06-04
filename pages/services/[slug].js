@@ -91,8 +91,7 @@ export default function Detail() {
               <h5>What We Offer</h5>
             </div>
             <h2>
-              We help enterprise and government teams architect AI systems that
-              scale
+              Scalable AI Architecture for Complex Environments
             </h2>
             <p>
               We help enterprise and government teams architect AI systems that
@@ -191,7 +190,7 @@ export default function Detail() {
                 </div>
                 <h4>Bedrock LLM Platform</h4>
                 <p>Designed secure cloud-native infra for LLM onboarding</p>
-                <Link href="" className="">
+                <Link href="/services/detail" className="">
                   Read More <i class="fa-solid fa-arrow-right"></i>
                 </Link>
               </div>
@@ -201,9 +200,9 @@ export default function Detail() {
                 <div className="image">
                   <img src="/images/r2.png" />
                 </div>
-                <h4>Bedrock LLM Platform</h4>
+                <h4>Fraud Detection ML Pipelines</h4>
                 <p>Designed secure cloud-native infra for LLM onboarding</p>
-                <Link href="" className="">
+                <Link href="/services/detail" className="">
                   Read More <i class="fa-solid fa-arrow-right"></i>
                 </Link>
               </div>
@@ -250,8 +249,8 @@ export default function Detail() {
                 phased model
               </p>
               <div className="btn_blk">
-                <Link href="" className="site_btn">
-                  Let’s Connect
+                <Link href="/contact" className="site_btn">
+                  Let’s Talk
                 </Link>
               </div>
             </div>
@@ -259,7 +258,30 @@ export default function Detail() {
         </div>
       </section>
       <Testimonials />
-      <Cta />
+      <section className="sec_cta">
+        <div className="contain">
+          <div className="inner">
+            <div className="cmn_heading">
+              <div className="title">
+                <h5>Get Started</h5>
+              </div>
+              <h2>
+                Available for consulting, fractional leadership, or speaking
+              </h2>
+            </div>
+            <div className="sec_content">
+              <p>
+                Remote-friendly, open to global partnerships in AI and Cloud.
+              </p>
+            </div>
+            <div className="cta">
+              <Link href="/contact" className="site_btn">
+                Get a Proposal
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
