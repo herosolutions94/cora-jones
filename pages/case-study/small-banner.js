@@ -3,7 +3,7 @@ import React from "react";
 const SmallBanner = () => {
   return (
     <>
-      <section className="sec_smallBanner">
+      <section className="sec_smallBanner case_banner_mst">
         <div className="contain">
           <div className="inside">
             <div className="main_heading">
@@ -13,7 +13,7 @@ const SmallBanner = () => {
               <p>
                 Explore how Cora has delivered transformational outcomes across
                 AI systems, cloud infrastructure, and enterprise
-                operations—driving results with measurable value.
+                operations—<strong>driving results with measurable value.</strong>
               </p>
             </div>
             <ul className="cta">
