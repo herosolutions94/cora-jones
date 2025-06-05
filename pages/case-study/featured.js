@@ -23,7 +23,7 @@ const Featured = () => {
                     <img src="images/f-1.png" alt="" />
                   </div>
                   <Link href="/case-study/detail">
-                    <h5>Accelerating LLM Onboarding</h5>
+                    <h5>Accelerating LLM Onboarding <span>Healthcare</span></h5>
                   </Link>
                 </div>
                 <div className="text">
@@ -50,12 +50,12 @@ const Featured = () => {
                   </div>
                   <Link href="/case-study/detail">
                     {" "}
-                    <h5>Enhancing Fraud Detection</h5>
+                    <h5>Enhancing Fraud Detection <span>Public Sector</span></h5>
                   </Link>
                 </div>
                 <div className="text">
                   <p>
-                    Improved fraud catch rate from 40% to 87% using scalable AI
+                    Improved fraud catch rate from <strong>40%</strong> to <strong>87%</strong> using scalable AI
                     detection systems with ML.
                   </p>
                 </div>
@@ -76,12 +76,12 @@ const Featured = () => {
                     <img src="images/f-3.png" alt="" />
                   </div>
                   <Link href="/case-study/detail">
-                    <h5>CI/CD Infrastructure Revamp</h5>
+                    <h5>CI/CD Infrastructure Revamp <span>AI</span></h5>
                   </Link>
                 </div>
                 <div className="text">
                   <p>
-                    Boosted system reliability to 99.9% uptime with enhanced
+                    Boosted system reliability to <strong>99.9%</strong> uptime with enhanced
                     cloud-based deployment pipelines.
                   </p>
                 </div>
@@ -103,7 +103,7 @@ const Featured = () => {
                   </div>
                   <Link href="/case-study/detail">
                     {" "}
-                    <h5>Intelligent Data Routing</h5>
+                    <h5>Intelligent Data Routing <span>Healthcare</span></h5>
                   </Link>
                 </div>
                 <div className="text">
@@ -129,13 +129,13 @@ const Featured = () => {
                     <img src="images/f-5.png" alt="" />
                   </div>
                   <Link href="/case-study/detail">
-                    <h5>AI Service Automation</h5>
+                    <h5>AI Service Automation <span>Public Sector</span></h5>
                   </Link>
                 </div>
                 <div className="text">
                   <p>
                     Deployed NLP-driven chat systems, reducing manual support
-                    load by 60% across enterprise teams.
+                    load by <strong>60%</strong> across enterprise teams.
                   </p>
                 </div>
                 <div className="link">

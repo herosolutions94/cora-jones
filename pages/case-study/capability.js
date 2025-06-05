@@ -3,7 +3,7 @@ import React from "react";
 const Capability = () => {
   return (
     <>
-      <section className="sec_capability">
+      <section className="sec_capability m_space_top">
         <div className="contain">
           <div className="cmn_heading">
             <div className="title">

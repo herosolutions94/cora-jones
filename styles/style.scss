@@ -938,6 +938,7 @@
     align-self: center;
     p {
       font-size: 22px;
+      line-height: 45px;
     }
   }
   .col2 {
@@ -1335,6 +1336,12 @@
 }
 // === sec_capability
 .sec_capability {
+  &.m_space_top{
+    padding-top: 17rem;
+    @include mobile{
+      padding-top: 5rem;
+    }
+  }
   .cmn_heading {
     text-align: center;
     max-width: 71rem;
@@ -1374,6 +1381,12 @@
 // === sec_smallBanner
 .sec_smallBanner {
   padding-top: 13rem;
+  &.case_banner_mst{
+    padding-top: 18rem;
+    @include mobile_md {
+      padding-top: 9rem;
+    }
+  }
   @include mobile_md {
     padding-top: 9rem;
   }
@@ -1418,25 +1431,25 @@
   }
   .flex {
     justify-content: center;
+    margin: -2rem;
     .cols {
-      width: calc(100% / 3);
+      width: calc(100% / 2);
       @include ipad_sm {
         width: 50%;
       }
       @include mobile_md {
         width: 100%;
-        padding: 10px 0;
       }
-      padding: 5px;
-      &:first-child {
-        width: 66.666%;
-        @include ipad_sm {
-          width: 50%;
-        }
-        @include mobile_md {
-          width: 100%;
-        }
-      }
+      padding: 20px;
+      // &:first-child {
+      //   width: 66.666%;
+      //   @include ipad_sm {
+      //     width: 50%;
+      //   }
+      //   @include mobile_md {
+      //     width: 100%;
+      //   }
+      // }
       .inner {
         background: $sec_bg;
         padding: 2rem;
@@ -1449,10 +1462,25 @@
           margin-bottom: 15px;
           h5 {
             margin-bottom: 0;
+            span{
+              background-color: $primary-color;
+              padding: .3rem 1rem;
+              font-size: 1.3rem;
+              @include radius(5px);
+            }
           }
           .icons {
             padding-right: 10px;
             width: 30px;
+          }
+        }
+        p{
+          strong{
+            background-color: #323232;
+            padding: .3rem 1rem;
+            @include radius(5px);
+            font-family: "Regular";
+            font-weight: 100;
           }
         }
         .link {
@@ -1539,7 +1567,7 @@
 }
 // ==== case_detail
 .case_detail {
-  padding-top: 13rem;
+  padding-top: 18rem;
   @include mobile_md {
     padding-top: 9rem;
   }
@@ -1550,9 +1578,18 @@
     text-align: center;
     p {
       font-size: 24px;
+      line-height: 45px;
       @include mobile_sm{
         font-size: 2rem;
       }
+    }
+    .cat_gory{
+      background-color: $primary-color;
+      padding: .3rem 1rem;
+      font-size: 1.3rem;
+      @include radius(5px);
+      width: fit-content;
+      margin: 0 auto 2rem;
     }
     .image_o {
       padding-bottom: 30rem;
@@ -1576,13 +1613,13 @@
       @include radius(20px);
     }
     .col1 {
-      @include mobile_md {
+      @include ipad_sm {
         width: 100%;
         padding-right: 0;
-        padding-bottom: 25px;
+        padding-bottom: 4rem;
       }
       width: 65%;
-      padding-right: 15px;
+      padding-right: 40px;
       .block {
         margin-bottom: 30px;
         &:last-child {
@@ -1591,15 +1628,17 @@
       }
     }
     .col2 {
-      @include mobile_md {
+      @include ipad_sm {
         width: 100%;
       }
       width: 35%;
       .tab_content {
+        margin-bottom: 4rem;
         h5 {
           color: #98989a;
+          margin-bottom: 2rem;
         }
-        .list {
+        ul {
           background: $sec_bg;
           padding: 1.8rem;
           padding-left: 3.5rem;
@@ -1610,7 +1649,7 @@
       }
       .listings {
         padding-left: 0;
-        margin-bottom: 20px;
+        margin-bottom: 40px;
         li {
           list-style: none;
           padding: 1.2rem;
@@ -1619,30 +1658,37 @@
           background: $sec_bg;
           font-size: 15px;
           margin-bottom: 10px;
+          @include flex($justify:space-between);
           h6 {
             margin-bottom: 0;
+            align-self: center;
           }
           p {
             color: rgba(255, 255, 255, 0.5);
+            margin-bottom: 0;
           }
         }
       }
       .mini_btn {
         padding-left: 0;
-        display: flex;
-        gap: 5px;
+        @include flex($flow:wrap);
+        gap: 10px;
+        @include list;
+        margin-bottom: 4rem;
         li {
           display: flex;
           align-items: center;
           background: #141414;
           list-style: none;
-          border: 1px solid #262626;
-          padding: 3px 10px;
-          @include radius(50px);
+          border: 1px solid rgba(37, 99, 235, 0.35);
+          padding: 5px 20px;
+          @include radius(10px);
           p {
             margin-bottom: 0;
-            font-size: 13px;
             color: #98989a;
+            strong{
+              color: $primary-color;
+            }
           }
           .icons {
             width: 25px;
@@ -1652,6 +1698,34 @@
       }
     }
   }
+  .quote_block {
+    margin-top: 14rem;
+    @include mobile{
+      margin-top: 0rem;
+    }
+    .image {
+      width: 80px;
+      height: 65px;
+      @include pos($r: null, $b: null, $t: 1rem, $l: 2rem);
+    }
+    .quote {
+      padding-left: 20px;
+      h3 {
+        font-family: "Italic";
+        font-size: 4rem;
+        @include mobile_sm {
+          font-size: 2.5rem;
+        }
+      }
+      p {
+        color: rgba(255, 255, 255, 0.6);
+        font-size: 1.8rem;
+        margin-top: 2rem;
+        margin-bottom: 0;
+      }
+    }
+  }
+  
 }
 
 .services_banner {
@@ -1705,6 +1779,35 @@
   p{
     &:last-child{
       margin-bottom: 0;
+    }
+  }
+}
+
+.detail_case_blk{
+  h4{
+    font-size: 2.2rem;
+  }
+  p , li{
+    strong{
+      color: $primary-color;
+    }
+  }
+  ul{
+    @include list;
+    li{
+      position: relative;
+      padding-left: 2.5rem;
+      &:not(:last-child){
+        margin-bottom: 1rem;
+      }
+      &:before{
+        @include pos($r:null,$t:.6rem);
+        content: '';
+        background: url('/images/check.svg');
+        @include bg(contain);
+        width: 1.7rem;
+        height: 1.7rem;
+      }
     }
   }
 }
