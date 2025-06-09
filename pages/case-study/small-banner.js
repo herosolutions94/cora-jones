@@ -5,11 +5,11 @@ const SmallBanner = () => {
     <>
       <section className="sec_smallBanner case_banner_mst">
         <div className="contain">
-          <div className="inside">
+          <div className="inside wide_inside">
             <div className="main_heading">
-              <h1>Case Studies in AI & Cloud Excellence</h1>
+              <h1>Architecting Enterprise-Grade GenAI: Case Studies With Measurable ROI</h1>
             </div>
-            <div className="sec_content">
+            {/* <div className="sec_content">
               <p>
                 Explore how Cora has delivered transformational outcomes across
                 AI systems, cloud infrastructure, and enterprise
@@ -22,7 +22,7 @@ const SmallBanner = () => {
                   Request Consultation<i className="fas fa-arrow-right"></i>
                 </Link>
               </li>
-            </ul>
+            </ul> */}
           </div>
         </div>
       </section>
