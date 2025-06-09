@@ -233,7 +233,11 @@
         &:first-child {
           padding-bottom: 15px;
         }
+        
       }
+    }
+    strong{
+      color: $primary-color;
     }
   }
 }

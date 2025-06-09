@@ -3,7 +3,7 @@ import React from "react";
 const Reliable = () => {
   return (
     <>
-      <section className="sec_reliable">
+      <section className="sec_reliable new_reliable_sec">
         <div className="contain">
           <div className="flex reverse_must">
             <div className="col1">
@@ -13,23 +13,20 @@ const Reliable = () => {
             </div>
             <div className="col2">
               <div className="cmn_heading">
-                <div className="title">
+                {/* <div className="title">
                   <h5>Enterprise Reliability</h5>
-                </div>
-                <h2>How It All Works</h2>
+                </div> */}
+                <h2>Quick Overview</h2>
               </div>
-              <div className="text">
-                <p>
-                  We design with intent. From cloud-native AI stacks to secure
-                  access layers, our solutions are robust, scalable, and
-                  traceable.
-                </p>
-              </div>
-              <div className="cta">
-                <Link href="/case-study" className="site_btn">
-                  View Case Study
-                </Link>
-              </div>
+              <p>At Infracta™, we deliver <strong>secure, high-performance GenAI infrastructure</strong> built for 
+              environments where <strong>compliance is critical</strong> and <strong>failure is not an option</strong>.</p>
+              <p>Our cross-functional delivery team includes AI infra engineers, DevSecOps architects, and GRC experts — together supporting:</p>
+              <ul>
+                <li><strong>20M+ end users</strong> across AI-native platforms</li>
+                <li><strong>12+ departments</strong> across federal, fintech, and SaaS</li>
+                <li><strong>LLMOps maturity assessments, vector pipeline deployments</strong>, and <strong>audit-ready agent orchestration</strong></li>
+              </ul>
+              <p>We specialize in aligning <strong>GenAI innovation with governance</strong>, so your systems are <strong>ready to scale — without compromise.</strong></p>
             </div>
           </div>
         </div>
